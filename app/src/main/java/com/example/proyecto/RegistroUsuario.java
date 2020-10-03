@@ -9,7 +9,7 @@ public class RegistroUsuario extends AppCompatActivity {
 
     private EditText yyy;
 
-
+    private EditText dd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
