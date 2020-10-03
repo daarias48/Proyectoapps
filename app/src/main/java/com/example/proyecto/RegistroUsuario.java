@@ -7,7 +7,7 @@ import android.widget.EditText;
 
 public class RegistroUsuario extends AppCompatActivity {
 
-    private EditText op;
+    private EditText yyy;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
