@@ -3,9 +3,11 @@ package com.example.proyecto;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.EditText;
 
 public class RegistroUsuario extends AppCompatActivity {
 
+    private EditText op;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
