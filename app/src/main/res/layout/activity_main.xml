@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#86D9E6"
+    android:background="#CFE8E6"
     tools:context=".MainActivity">
 
     <Button
@@ -14,7 +14,9 @@
         android:layout_marginStart="56dp"
         android:layout_marginLeft="56dp"
         android:layout_marginTop="48dp"
-        android:text="@string/BCC"
+        android:background="@drawable/ovalo"
+        android:text="@string/Bingreso"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
@@ -25,7 +27,9 @@
         android:layout_marginTop="48dp"
         android:layout_marginEnd="56dp"
         android:layout_marginRight="56dp"
-        android:text="@string/Bingreso"
+        android:background="@drawable/ovalo"
+        android:text="ATRAS"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
@@ -57,11 +61,4 @@
             android:selectAllOnFocus="false" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="608dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
