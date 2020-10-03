@@ -7,6 +7,8 @@ import android.widget.EditText;
 
 public class RegistroUsuario extends AppCompatActivity {
 
+    private EditText yyy;
+
 
     private EditText ttt;
     private EditText yyy;
