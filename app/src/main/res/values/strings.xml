@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Proyecto</string>
+    <string name="ENombre">Nombre</string>
+    <string name="Econtra">Contraseña</string>
+    <string name="Bingreso">Ingresar</string>
+    <string name="BCC">Crear cuenta</string>
+    <!--INTERFAZ REGISTROUSUARIO-->
+    <string name="Enom">Nombre</string>
+    <string name="Eusu">Nombre de usuario</string>
+    <string name="ECorreo">Correo electrónico</string>
+    <string name="Econtrase">Contraseña</string>
+    <string name="BtReg">Registrar</string>
+    <string name="BtAtras">Atras</string>
+
+</resources>
