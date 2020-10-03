@@ -9,6 +9,8 @@ public class RegistroUsuario extends AppCompatActivity {
 
     private EditText yyy;
 
+    private EditText zzzz;
+    private EditText ttt;
 
     private EditText ttt;
     private EditText yyy;
