@@ -11,6 +11,7 @@ public class RegistroUsuario extends AppCompatActivity {
 
     private EditText zzzz;
     private EditText ttt;
+    private EditText prueba;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
