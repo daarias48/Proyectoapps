@@ -20,7 +20,8 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="start" />
 
     <Button
         android:id="@+id/button3"
@@ -48,9 +49,9 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="365dp"
-        android:layout_height="252dp"
-        android:layout_marginTop="52dp"
+        android:layout_width="343dp"
+        android:layout_height="242dp"
+        android:layout_marginTop="76dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -60,6 +60,6 @@
         android:layout_marginLeft="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:srcCompat="@mipmap/logo" />
+        app:srcCompat="@drawable/logoapp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
