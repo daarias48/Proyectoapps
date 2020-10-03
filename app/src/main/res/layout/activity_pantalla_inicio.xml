@@ -10,34 +10,25 @@
         android:id="@+id/button9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="40dp"
         android:text="Button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7" />
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="185dp" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="172dp"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/Botoninfo"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="97dp" />
 
     <Button
         android:id="@+id/button8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginLeft="84dp"
-        android:layout_marginTop="44dp"
         android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/button7"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+        tools:layout_editor_absoluteX="241dp"
+        tools:layout_editor_absoluteY="180dp" />
 
     <Button
         android:id="@+id/button10"
@@ -62,15 +53,15 @@
         app:layout_constraintTop_toBottomOf="@+id/button10" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="116dp"
-        android:layout_height="95dp"
+        android:id="@+id/imageButton4"
+        android:layout_width="62dp"
+        android:layout_height="67dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:background="@color/cardview_shadow_end_color"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/material_on_background_disabled"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/calendarioimg" />
+        app:srcCompat="@drawable/calendario_imag" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
