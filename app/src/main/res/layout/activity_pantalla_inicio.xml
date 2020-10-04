@@ -7,6 +7,16 @@
     android:background="#CFE8E6"
     tools:context=".Pantalla_inicio">
 
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:text="BOTON DE EMERGENCIA"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="428dp" />
+
     <ImageButton
         android:id="@+id/imageButton4"
         android:layout_width="62dp"
