@@ -4,64 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#CFE8E6"
     tools:context=".Pantalla_inicio">
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="185dp" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Botoninfo"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="97dp" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="241dp"
-        tools:layout_editor_absoluteY="180dp" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="68dp"
-        android:layout_marginRight="68dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
-
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="112dp"
-        android:text="BOTON DE EMERGENCIA"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button10" />
 
     <ImageButton
         android:id="@+id/imageButton4"
         android:layout_width="62dp"
         android:layout_height="67dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
         android:background="@color/material_on_background_disabled"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/calendario_imag" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/material_on_background_disabled"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cerrarsesionimg" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/material_on_background_disabled"
+        app:srcCompat="@drawable/libro"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="135dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="92dp"
+        android:layout_height="79dp"
+        android:background="@color/material_on_background_disabled"
+        app:srcCompat="@drawable/education_book_learn_learning_icon_149694__1_"
+        tools:layout_editor_absoluteX="224dp"
+        tools:layout_editor_absoluteY="135dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/material_on_background_disabled"
+        app:srcCompat="@drawable/boton_rojo__1_"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="334dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

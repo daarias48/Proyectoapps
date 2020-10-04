@@ -7,6 +7,10 @@ import android.widget.EditText;
 
 public class RegistroUsuario extends AppCompatActivity {
 
+    private EditText yyy;
+
+    private EditText zzzz;
+    private EditText ttt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

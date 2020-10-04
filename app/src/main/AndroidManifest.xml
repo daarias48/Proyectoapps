@@ -13,6 +13,7 @@
         <activity android:name=".RegistroUsuario" />
         <activity android:name=".PantallaPrincipal" />
         <activity android:name=".Responsabilidad" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
