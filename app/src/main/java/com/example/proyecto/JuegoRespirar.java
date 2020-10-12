@@ -8,17 +8,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class JuegoRespirar extends AppCompatActivity {
 
     public ImageView circulo;
-
-    public ObjectAnimator animatorArriba;
-    public ObjectAnimator animatorAbajo;
-    public AnimatorSet animatorSet;
-
     Juegos juegos;
+    public Button b;
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,13 +23,14 @@ public class JuegoRespirar extends AppCompatActivity {
         setContentView(R.layout.activity_juego_respirar);
         circulo = (ImageView) findViewById(R.id.ID_v);
         juegos = new Juegos();
-
-
+        b = (Button) findViewById(R.id.Start);
     }
 
     public void Empezar (View view){
         Animation animation = AnimationUtils.loadAnimation(this,R.anim.scale);
-        circulo.startAnimation(animation);
+        juegos.Zoom(animation,circulo);
+        b.setVisibility(View.INVISIBLE);
+
     }
 
 
