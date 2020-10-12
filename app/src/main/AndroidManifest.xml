@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Info_ansiedad"></activity>
+        <activity android:name=".Diario_R"></activity>
+        <activity android:name=".Info_vs" />
+        <activity android:name=".Info_ansiedad" />
         <activity android:name=".Menu_informacion" />
         <activity android:name=".Pantalla_inicio" />
         <activity android:name=".RegistroUsuario" />
