@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.proyecto">
 
     <application
@@ -15,14 +16,10 @@
         <activity android:name=".Menu_informacion" />
         <activity android:name=".Pantalla_inicio" />
         <activity android:name=".RegistroUsuario" />
-        <activity android:name=".PantallaPrincipal" />
         <activity android:name=".Responsabilidad" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"/>
         <activity android:name=".Son_Piano"></activity>
         <activity android:name=".JuegoRespirar" />
-        <activity android:name=".RegistroUsuario" />
-        <activity android:name=".Responsabilidad" />
-        <activity android:name=".MainActivity" />
         <activity android:name=".PantallaPrincipal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
