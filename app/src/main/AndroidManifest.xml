@@ -18,6 +18,12 @@
         <activity android:name=".PantallaPrincipal" />
         <activity android:name=".Responsabilidad" />
         <activity android:name=".MainActivity">
+        <activity android:name=".Son_Piano"></activity>
+        <activity android:name=".JuegoRespirar" />
+        <activity android:name=".RegistroUsuario" />
+        <activity android:name=".Responsabilidad" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".PantallaPrincipal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

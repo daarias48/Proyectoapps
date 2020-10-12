@@ -7,41 +7,42 @@
     android:background="#CFE8E6"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="130dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginLeft="56dp"
-        android:layout_marginTop="48dp"
-        android:background="@drawable/ovalo"
-        android:text="@string/Bingreso"
-        android:textColor="#000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="130dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginRight="56dp"
-        android:background="@drawable/ovalo"
-        android:text="ATRAS"
-        android:textColor="#000000"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="199dp"
+        android:layout_height="209dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@mipmap/candado" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="casual"
+        android:gravity="start"
+        android:text="INICIO DE SESIÓN"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="331dp"
         android:layout_height="126dp"
-        android:layout_marginTop="292dp"
+        android:layout_marginTop="16dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.712"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
 
         <EditText
             android:id="@+id/editTextTextPersonName"
@@ -49,7 +50,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/ENombre"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:typeface="monospace" />
 
         <EditText
             android:id="@+id/editTextTextPersonName2"
@@ -58,7 +60,39 @@
             android:ems="10"
             android:hint="@string/Econtra"
             android:inputType="textPersonName"
-            android:selectAllOnFocus="false" />
+            android:selectAllOnFocus="false"
+            android:typeface="monospace" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginRight="58dp"
+        android:background="@drawable/ovalo"
+        android:onClick="Atras"
+        android:text="ATRAS"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/ovalo"
+        android:text="@string/Bingreso"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
