@@ -16,7 +16,6 @@
         <activity android:name=".Menu_informacion" />
         <activity android:name=".Pantalla_inicio" />
         <activity android:name=".RegistroUsuario" />
-        <activity android:name=".Responsabilidad" />
         <activity android:name=".MainActivity"/>
         <activity android:name=".Son_Piano"></activity>
         <activity android:name=".JuegoRespirar" />

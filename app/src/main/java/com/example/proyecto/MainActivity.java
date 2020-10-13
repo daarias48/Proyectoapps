@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Respons (View view){
-        Intent sig = new Intent(this, Responsabilidad.class);
+        Intent sig = new Intent(this, Info_vs.class);
         startActivity(sig);
     }
 }
