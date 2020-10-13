@@ -33,11 +33,10 @@ public class Son_Piano extends AppCompatActivity {
         btn = (Button) findViewById(R.id.btn);
         animarbtn =  AnimationUtils.loadAnimation(this,R.anim.negative_scale);
         btn.startAnimation(animarbtn);
-
     }
 
     public void Reproducir(View view){
-        numero = (int) (Math.random()*3)+1;
+        numero = (int) (Math.random()*2);
         vector[numero].start();
     }
 

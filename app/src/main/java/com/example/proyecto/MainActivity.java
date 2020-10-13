@@ -18,4 +18,9 @@ public class MainActivity extends AppCompatActivity {
         Intent sig = new Intent(this, PantallaPrincipal.class);
         startActivity(sig);
     }
+
+    public void Respons (View view){
+        Intent sig = new Intent(this, Responsabilidad.class);
+        startActivity(sig);
+    }
 }

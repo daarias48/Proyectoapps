@@ -20,7 +20,7 @@ public class PantallaPrincipal extends AppCompatActivity {
     }
 
     public void Registrarse (View view){
-        Intent sig = new Intent(this, Son_Piano.class);
+        Intent sig = new Intent(this, RegistroUsuario.class);
         startActivity(sig);
     }
 }
