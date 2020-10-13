@@ -11,13 +11,32 @@
 
 
 
+
+
+
+
+
+
+
+
     ]]>
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Cerrar Sesión"
+        app:fontFamily="casual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="136dp"
         android:layout_marginEnd="68dp"
         android:layout_marginRight="68dp"
         android:text="STOP AND BREATHE"
@@ -74,8 +93,8 @@
 
     <Button
         android:id="@+id/button10"
-        android:layout_width="50dp"
-        android:layout_height="43dp"
+        android:layout_width="51dp"
+        android:layout_height="50dp"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="40dp"
@@ -91,6 +110,7 @@
         android:layout_marginLeft="52dp"
         android:layout_marginTop="52dp"
         android:background="@drawable/libro"
+        android:onClick="Menuinfo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -115,5 +135,16 @@
         android:background="@drawable/boton_emergencia"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button12" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:text="Diario"
+        app:fontFamily="casual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

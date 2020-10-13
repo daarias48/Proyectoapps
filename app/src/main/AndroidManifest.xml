@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Info_estres"></activity>
+        <activity android:name=".Ejer_autocuidado"></activity>
+        <activity android:name=".Info_estres" />
         <activity android:name=".Diario_R" />
         <activity android:name=".Info_vs" />
         <activity android:name=".Info_ansiedad" />

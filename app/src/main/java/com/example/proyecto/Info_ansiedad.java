@@ -17,5 +17,6 @@ public class Info_ansiedad extends AppCompatActivity {
     public void  Anterior (View view){
         Intent ant= new Intent(this,Menu_informacion.class);
         startActivity(ant);
+
     }
 }
