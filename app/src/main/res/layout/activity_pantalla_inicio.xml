@@ -42,7 +42,7 @@
         android:onClick="Menuinfo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:srcCompat="@drawable/Libro_interfaz" />
+        app:srcCompat="@drawable/libro_interfaz" />
 
     <ImageButton
         android:id="@+id/imageButton5"
