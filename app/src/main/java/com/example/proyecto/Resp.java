@@ -1,21 +1,21 @@
 package com.example.proyecto;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-public class Responsabilidad extends AppCompatActivity {
+public class Resp extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_responsabilidad);
+        setContentView(R.layout.activity_resp);
     }
 
     public void Continuar (View view){
-        Intent sig = new Intent(this, Pantalla_inicio.class);
-        startActivity(sig);
+        //Intent sig = new Intent(this, Pant_inicio.class);
+        //startActivity(sig);
     }
 }

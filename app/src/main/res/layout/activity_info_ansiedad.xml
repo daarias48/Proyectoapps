@@ -22,13 +22,4 @@
         </LinearLayout>
     </ScrollView>
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="296dp"
-        android:layout_height="wrap_content"
-        android:text="¿QUÉ ES LA ANSIEDAD?"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:fontFamily="casual"
-        tools:layout_editor_absoluteX="2dp" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

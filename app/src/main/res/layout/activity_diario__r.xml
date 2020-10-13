@@ -27,7 +27,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:background="@drawable/ovalo"
-        android:text="@string/BtAtras"
+        android:text="Atras"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
@@ -88,43 +88,39 @@
             app:fontFamily="casual" />
 
         <TableRow
+            android:id="@+id/table"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ImageButton
-                android:id="@+id/imageButton16"
-                android:layout_width="61dp"
-                android:layout_height="match_parent"
-                android:background="@color/material_on_background_disabled"
-                app:srcCompat="@drawable/feliz" />
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/feliz" />
 
-            <ImageButton
-                android:id="@+id/imageButton17"
-                android:layout_width="54dp"
-                android:layout_height="match_parent"
-                android:background="@color/material_on_background_disabled"
-                app:srcCompat="@drawable/triste" />
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/triste" />
 
-            <ImageButton
-                android:id="@+id/imageButton9"
-                android:layout_width="57dp"
-                android:layout_height="wrap_content"
-                android:background="@color/material_on_background_disabled"
-                app:srcCompat="@drawable/meh" />
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/meh" />
 
-            <ImageButton
-                android:id="@+id/imageButton18"
-                android:layout_width="59dp"
-                android:layout_height="wrap_content"
-                android:background="@color/material_on_background_disabled"
-                app:srcCompat="@drawable/angustia" />
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/angustia" />
 
-            <ImageButton
-                android:id="@+id/imageButton19"
-                android:layout_width="53dp"
-                android:layout_height="wrap_content"
-                android:background="@color/material_on_background_disabled"
-                app:srcCompat="@drawable/enojo" />
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/enojo" />
 
         </TableRow>
 
