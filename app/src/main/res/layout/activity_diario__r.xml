@@ -94,34 +94,56 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/button12"
+                android:id="@+id/ID_feliz"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/feliz" />
+                android:background="@drawable/feliz"
+                android:onClick="onClick" />
 
             <Button
-                android:id="@+id/button13"
+                android:id="@+id/ID_triste"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/triste" />
+                android:background="@drawable/triste"
+                android:onClick="onClick" />
 
             <Button
-                android:id="@+id/button14"
+                android:id="@+id/ID_meh"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/meh" />
+                android:background="@drawable/meh"
+                android:onClick="onClick" />
 
             <Button
-                android:id="@+id/button15"
+                android:id="@+id/ID_frustracion"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/angustia" />
+                android:background="@drawable/angustia"
+                android:onClick="onClick" />
 
             <Button
-                android:id="@+id/button16"
+                android:id="@+id/ID_enojo"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/enojo" />
+                android:background="@drawable/enojo"
+                android:onClick="onClick" />
+
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   " />
+
+            <TextView
+                android:id="@+id/ID_emoción"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/design_default_color_secondary_variant"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
 
         </TableRow>
 
