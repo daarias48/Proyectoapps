@@ -3,6 +3,7 @@ package com.example.proyecto;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DownloadManager;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -23,6 +24,7 @@ import java.util.Map;
 public class RegistroUsuario extends AppCompatActivity {
 
     private EditText nom,correo,contra,confcon,nomusu;
+    CRUD_usuario crud;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,43 +35,23 @@ public class RegistroUsuario extends AppCompatActivity {
         correo = (EditText) findViewById(R.id.ECorreo);
         contra = (EditText) findViewById(R.id.ECon);
         confcon = (EditText) findViewById(R.id.EContra);
-
-    }
-
-
-    public void ejecutarServicio (String URL){
-        StringRequest stringRequest = new StringRequest(Request.Method.POST,URL, new Response.Listener<String>(){
-
-            @Override
-            public void onResponse(String response) {
-                Toast.makeText(getApplicationContext(),"Operación exitosa", Toast.LENGTH_SHORT).show();
-
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getApplicationContext(),error.toString(),Toast.LENGTH_SHORT).show();
-            }
-        }) {
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String,String> parametros = new HashMap<String,String>();
-                parametros.put("correo",correo.getText().toString());
-                parametros.put("nombre",nom.getText().toString());
-                parametros.put("nombreusu",nomusu.getText().toString());
-                parametros.put("contrasena",contra.getText().toString());
-                return parametros;
-            }
-        };
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
-        requestQueue.add(stringRequest);
+        crud = new CRUD_usuario();
 
     }
 
     public void Registrar (View view){
-
-        ejecutarServicio("https://ariasdavid.000webhostapp.com/insertar_usuario.php");
-        //ejecutarServicio("http://192.168.0.7:80/proyectoapps/insertar_usuario.php");
+        String corr = correo.getText().toString();
+        String nomb = nom.getText().toString();
+        String nombusu = nomusu.getText().toString();
+        String cont = contra.getText().toString();
+        Context context = this;
+        if (contra.getText().toString().equals(confcon.getText().toString())) {
+            crud.Registrar("https://ariasdavid.000webhostapp.com/insertar_usuario.php", corr, nomb, nombusu, cont, context);
+            //ejecutarServicio("https://ariasdavid.000webhostapp.com/insertar_usuario.php");
+            //ejecutarServicio("http://192.168.0.7:80/proyectoapps/insertar_usuario.php");
+        }else {
+            Toast.makeText(this,"La contraseña es incorrecta. Verifíquela",Toast.LENGTH_SHORT).show();
+        }
     }
 
 }

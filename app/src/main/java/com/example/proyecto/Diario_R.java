@@ -10,15 +10,27 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import android.widget.DatePicker;
+import android.widget.Toast;
+
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import android.widget.TextView;
 
 import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class Diario_R extends AppCompatActivity {
     TextView muestra;
     EditText efecha;
     Button bfeliz,btriste,bmeh,bfrutra,benojo;
+    EditText diario;
     private  int dia,mes,anio;
     private String emocion;
     @Override
@@ -49,6 +61,7 @@ public class Diario_R extends AppCompatActivity {
         }
 
         muestra.setText(emocion);
+        diario = (EditText) findViewById(R.id.ID_Esc);
     }
 
     public void  Calendario (View view){
@@ -65,5 +78,34 @@ public class Diario_R extends AppCompatActivity {
         }
                 ,dia,mes,anio);
         datePickerDialog.show();
+    }
+
+    public void ejecutarServicio (String URL){
+        StringRequest stringRequest = new StringRequest(Request.Method.POST,URL, new Response.Listener<String>(){
+
+            @Override
+            public void onResponse(String response) {
+                Toast.makeText(getApplicationContext(),"Operación exitosa", Toast.LENGTH_SHORT).show();
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getApplicationContext(),error.toString(),Toast.LENGTH_SHORT).show();
+            }
+        }) {
+            @Override
+
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String,String> parametros = new HashMap<String,String>();
+                parametros.put("fecha",efecha.getText().toString());
+                //parametros.put("emocion",);
+                parametros.put("diario",diario.getText().toString());
+                return parametros;
+            }
+        };
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(stringRequest);
+
     }
 }
