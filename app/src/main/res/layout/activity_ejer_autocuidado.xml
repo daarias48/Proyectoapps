@@ -42,7 +42,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="¿QUÉ ES LA ANSIEDAD?"
+                android:text="RUTINAS DE AUTOCUIDADO"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="@color/design_default_color_secondary_variant"
                 android:textStyle="bold"
