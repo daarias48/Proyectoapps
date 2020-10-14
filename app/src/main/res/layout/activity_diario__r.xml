@@ -71,11 +71,12 @@
                 app:fontFamily="casual" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName7"
+                android:id="@+id/ID_fecha"
                 android:layout_width="240dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:onClick="Calendario" />
         </TableRow>
 
         <TextView
@@ -143,7 +144,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/editTextTextMultiLine2"
+                    android:id="@+id/ID_Esc"
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
                     android:ems="10"

@@ -2,6 +2,7 @@ package com.example.proyecto;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     public EditText correo, contra;
     public TextView aux;
     Intent in;
+    CRUD_usuario crud;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         correo = (EditText) findViewById(R.id.correo);
         contra = (EditText) findViewById(R.id.contra);
         aux = (TextView) findViewById(R.id.Aux);
+        crud = new CRUD_usuario();
     }
 
     public void Atras (View view){
@@ -40,44 +43,16 @@ public class MainActivity extends AppCompatActivity {
         startActivity(sig);
     }
 
-    public void Buscar (String URL){
-        Toast.makeText(getApplicationContext(), "Cargando...", Toast.LENGTH_SHORT).show();
-        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(URL, new Response.Listener<JSONArray>() {
-            @Override
-            public void onResponse(JSONArray response) {
-
-                JSONObject jsonObject = null;
-                for (int i = 0; i < response.length(); i++) {
-                    try {
-                        jsonObject = response.getJSONObject(i);
-                        aux.setText(jsonObject.getString("contrasena"));
-
-                        if (aux.getText().toString().equals(contra.getText().toString())){
-                            in= new Intent(getApplicationContext(), Resp.class);
-                            startActivity(in);
-                        }
-
-
-                    } catch (JSONException e) {
-                        Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
-
-                    }
-                }
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getApplicationContext(), "No está registrado", Toast.LENGTH_SHORT).show();
-            }
-        }
-        );
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
-        requestQueue.add(jsonArrayRequest);
-    }
 
     public void Ingresar (View view) {
-        Buscar("https://ariasdavid.000webhostapp.com/buscar_usuario.php?correo=" + correo.getText() + "&contrasena=" + contra.getText());
+        Context context = this;
+        crud.InicioSesion("https://ariasdavid.000webhostapp.com/buscar_usuario.php?correo=" + correo.getText() + "&contrasena=" + contra.getText(),aux,contra,context);
+        int a= crud.x;
+        if (a==1 & !aux.getText().toString().isEmpty()) {
+            in = new Intent(this, Resp.class);
+            startActivity(in);
 
+        }
     }
 
 

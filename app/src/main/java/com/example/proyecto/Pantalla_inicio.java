@@ -6,17 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Info_ansiedad extends AppCompatActivity {
+public class Pantalla_inicio extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_info_ansiedad);
+        setContentView(R.layout.activity_pantalla_inicio);
     }
 
-    public void  Anterior (View view){
-        Intent ant= new Intent(this,Menu_informacion.class);
-        startActivity(ant);
-
+    public void  Menuinfo (View view){
+        Intent inf= new Intent(this,Menu_informacion.class);
+        startActivity(inf);
     }
 }

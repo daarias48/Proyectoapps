@@ -15,7 +15,7 @@ public class Resp extends AppCompatActivity {
     }
 
     public void Continuar (View view){
-        //Intent sig = new Intent(this, Pant_inicio.class);
-        //startActivity(sig);
+        Intent sig = new Intent(this, Pantalla_inicio.class);
+        startActivity(sig);
     }
 }

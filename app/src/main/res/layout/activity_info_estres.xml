@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFE8E6"
+    tools:context=".Info_estres">
+
+    <Button
+        android:id="@+id/ID_frustracion"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="263dp"
+        android:layout_marginRight="263dp"
+        android:background="@drawable/ovalo"
+        android:onClick="Anterior"
+        android:text="@string/BtAtras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="130dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:gravity="center_horizontal"
+        android:text="ESTRÉS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="361dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="¿QUÉ ES EL ESTRÉS?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/design_default_color_secondary_variant"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Se define como la reacción fisiológica del organismo en el que entran en juego diversos mecanismos de defensa para afrontar una situación que se percibe como amenazante o de demanda incrementada. "
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                app:fontFamily="casual" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/perro_estres" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="El estrés es una respuesta natural y necesaria para la supervivencia. Cuando esta respuesta natural se da en exceso se produce una sobrecarga de tensión que repercute en el organismo y provoca la aparición de enfermedades y anomalías patológicas que impiden el normal desarrollo y funcionamiento del cuerpo humano. "
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                app:fontFamily="casual" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/perro_triste" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SINTOMAS"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/design_default_color_secondary_variant"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="●	Diarrea o estreñimiento"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="●	Mala memoria"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="●	Dolores y achaques frecuentes"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="●	Dolores de cabeza"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="●	Falta de energía o concentración"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="●	Cuello o mandíbula rígidos"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="●	Cansancio"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                app:fontFamily="casual" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/perro_pregunta" />
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CAUSAS"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/design_default_color_secondary_variant"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Las causas del estrés pueden variar en función de la situación y de la persona, entre las causas más comunes tenemos:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	Aumento de la carga de trabajo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	Situaciones estresantes en el trabajo, fallecimiento,   separación"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	Problemas académicos, laborales o familiares"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                app:fontFamily="casual" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

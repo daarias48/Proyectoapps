@@ -7,11 +7,34 @@
     android:background="#CFE8E6"
     tools:context=".Info_ansiedad">
 
+    <Button
+        android:id="@+id/ID_meh"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginRight="250dp"
+        android:background="@drawable/ovalo"
+        android:onClick="Anterior"
+        android:text="@string/BtAtras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="361dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
@@ -19,7 +42,249 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="¿QUÉ ES LA ANSIEDAD?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/design_default_color_secondary_variant"
+                android:textStyle="bold"
+                app:fontFamily="casual"
+                tools:layout_editor_absoluteX="2dp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Es una sensación de miedo con opresión en el pecho y dificultad de respirar, se presenta como una sensación de amenaza y peligro unida al sentimiento de indefensión por la anticipación de una situación."
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                app:fontFamily="casual" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/perro_ansiedad" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IMPORTANTE"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/design_default_color_secondary_variant"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="●	Un ataque de ansiedad no implica la muerte ni vas a enloquecer. "
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="●	Si las crisis de ansiedad afectan tu vida diaria, es importante consultar a un profesional en un centro de salud o en las líneas de emergencia de tu país."
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/perro_angustia" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SINTOMAS"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/design_default_color_secondary_variant"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="●	Respiración acelerada"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="●	Sudoración "
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="●	Aceleración ritmo cardiaco"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="●	Temblores"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="●	Visión borrosa"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="●	Angustia"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                app:fontFamily="casual" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/perro_pregunta" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CAUSAS"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/design_default_color_secondary_variant"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="●	Genéticas:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/design_default_color_secondary_variant"
+                    app:fontFamily="casual" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Heredado.                        "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    app:fontFamily="casual" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="256dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="1"
+                    android:text="●	Metabólicas: "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/design_default_color_secondary_variant"
+                    app:fontFamily="casual" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tiene que ver con nuestro cerebro y las conexiones sinápticas."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    app:fontFamily="casual" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="256dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="●	Comportamental: "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/design_default_color_secondary_variant"
+                    app:fontFamily="casual" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Estrés al pensar en situaciones ser externas: problema laboral, problemas de parejas, dificultades laborales o académicas, periodo de exámenes. "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    app:fontFamily="casual" />
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="130dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:gravity="center_horizontal"
+        android:text="ANSIEDAD"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
