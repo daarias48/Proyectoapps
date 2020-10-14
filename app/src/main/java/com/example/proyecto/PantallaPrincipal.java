@@ -15,8 +15,7 @@ public class PantallaPrincipal extends AppCompatActivity {
     }
 
     public void InicioSesion (View view){
-        //Intent sig = new Intent(this, MainActivity.class);
-        Intent sig = new Intent(this, Diario_R.class);
+        Intent sig = new Intent(this, MainActivity.class);
         startActivity(sig);
     }
 
