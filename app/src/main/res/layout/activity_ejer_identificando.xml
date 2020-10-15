@@ -170,13 +170,15 @@
                     android:id="@+id/imageView15"
                     android:layout_width="146dp"
                     android:layout_height="109dp"
+                    android:onClick="Diario"
                     app:srcCompat="@drawable/aguacate_rutina" />
 
                 <TextView
                     android:id="@+id/textView75"
-                    android:layout_width="221dp"
+                    android:layout_width="109dp"
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
+                    android:onClick="Diario"
                     android:text="IR A MI DIARIO"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textColor="@android:color/holo_green_dark"
