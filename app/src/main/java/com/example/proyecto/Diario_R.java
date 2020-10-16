@@ -20,6 +20,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import android.widget.TextView;
 
 import java.util.Calendar;
 import java.util.HashMap;
@@ -29,8 +30,9 @@ import java.util.Map;
 public class Diario_R extends AppCompatActivity {
     TextView muestra;
     EditText efecha;
-    EditText diario;
     Button bfeliz,btriste,bmeh,bfrutra,benojo;
+    EditText diario;
+
     private  int dia,mes,anio;
     private String emocion;
     @Override
@@ -62,7 +64,7 @@ public class Diario_R extends AppCompatActivity {
         }
 
         muestra.setText(emocion);
-
+        diario = (EditText) findViewById(R.id.ID_Esc);
     }
 
     public void  Calendario (View view){
@@ -108,5 +110,10 @@ public class Diario_R extends AppCompatActivity {
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
 
+    }
+
+    public void Atras (View view){
+        Intent sig = new Intent(this, Pantalla_inicio.class);
+        startActivity(sig);
     }
 }

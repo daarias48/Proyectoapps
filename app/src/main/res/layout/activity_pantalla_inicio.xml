@@ -19,132 +19,145 @@
 
 
 
-    ]]>
 
-    <TextView
-        android:id="@+id/textView54"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:text="Cerrar Sesión"
-        app:fontFamily="casual"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+
+
+    ]]>
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="68dp"
         android:layout_marginRight="68dp"
         android:text="STOP AND BREATHE"
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@color/design_default_color_on_secondary"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="208dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="68dp"
-        android:onClick="Menuinfo"
-        android:text="Conociendo sobre mi salud mental"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@color/design_default_color_on_secondary"
-        android:textStyle="bold"
-        app:fontFamily="casual"
-        app:layout_constraintStart_toEndOf="@+id/button11"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="208dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="64dp"
-        android:text="Controlando mi ansiedad y estrés"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@color/design_default_color_on_secondary"
-        android:textStyle="bold"
-        app:fontFamily="casual"
-        app:layout_constraintStart_toEndOf="@+id/ID_feliz"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="60dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:background="@drawable/cerrarsesionimg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="58dp"
-        android:layout_height="57dp"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
         android:layout_marginTop="36dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginRight="36dp"
         android:background="@drawable/calendario_imag"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="51dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/cerrarsesionimg"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
-        android:layout_marginTop="52dp"
-        android:background="@drawable/libro"
-        android:onClick="Menuinfo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <Button
-        android:id="@+id/ID_feliz"
-        android:layout_width="93dp"
-        android:layout_height="99dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
-        android:layout_marginTop="28dp"
-        android:background="@drawable/cerebro"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button11" />
-
-    <Button
-        android:id="@+id/ID_triste"
-        android:layout_width="218dp"
-        android:layout_height="143dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginLeft="84dp"
-        android:layout_marginTop="44dp"
-        android:background="@drawable/boton_emergencia"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ID_feliz" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
         android:id="@+id/textView49"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="44dp"
-        android:layout_marginRight="44dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="12dp"
         android:text="Diario"
+        android:textColor="@color/design_default_color_on_secondary"
+        app:fontFamily="casual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:text="Cerrar Sesión"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="12sp"
         app:fontFamily="casual"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button9" />
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="104dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:gravity="center_horizontal"
+        android:onClick="Menuejer"
+        android:text="Controlando mi ansiedad y estrés"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="12sp"
+        app:fontFamily="casual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ID_feliz" />
+
+    <Button
+        android:id="@+id/ID_feliz"
+        android:layout_width="85dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:background="@drawable/cerebro"
+        android:onClick="Menuejer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="81dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/libro"
+        android:onClick="Menuinfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal"
+        android:onClick="Menuinfo"
+        android:text="Conociendo sobre mi salud mental"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="12sp"
+        app:fontFamily="casual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button11" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/boton_emergencia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView49" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

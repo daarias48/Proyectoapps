@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#CFE8E6"
-    tools:context=".Ejer_autocuidado">
+    tools:context=".Ejer_identificando">
 
     <TextView
-        android:id="@+id/textView64"
+        android:id="@+id/textView65"
         android:layout_width="189dp"
         android:layout_height="60dp"
         android:layout_marginStart="196dp"
@@ -28,7 +28,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button17"
+        android:id="@+id/button13"
         android:layout_width="120dp"
         android:layout_height="50dp"
         android:layout_marginStart="28dp"
@@ -59,120 +59,133 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView55"
+                android:id="@+id/textView66"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="RUTINAS DE AUTOCUIDADO"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:text="IDENTIFICANDO EMOCIONES Y PENSAMIENTOS"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="@color/design_default_color_secondary_variant"
                 android:textStyle="bold"
                 app:fontFamily="casual" />
 
             <TextView
-                android:id="@+id/textView56"
+                android:id="@+id/textView67"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="●	Practica ejercicio físico todos los días (caminar, correr, aeróbicos, subir escaleras y no utilizar el ascensor etc.)"
+                android:text="Identificar las causas que nos producen estrés o ansiedad y escribirlas, a ser posible, en el mismo instante cuando se producen. "
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="@color/design_default_color_on_secondary"
                 app:fontFamily="casual" />
 
             <ImageView
-                android:id="@+id/imageView19"
+                android:id="@+id/imageView13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/aguacate_ejer" />
+                app:srcCompat="@drawable/aguacate_enojado" />
 
             <TextView
-                android:id="@+id/textView57"
+                android:id="@+id/textView68"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="●	Realiza ejercicios de meditación, relajación y/o estiramientos"
+                android:text="Posteriormente hemos de esforzarnos en escribir los pensamientos racionales y realistas como antídoto de los tóxicos pensamientos negativos."
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/textView70"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IMPORTANTE"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/design_default_color_secondary_variant"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/textView69"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Leer una y otra vez en voz alta los pensamientos realistas y positivos."
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="@color/design_default_color_on_secondary"
                 app:fontFamily="casual" />
 
             <ImageView
-                android:id="@+id/imageView20"
+                android:id="@+id/imageView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/aguacate_feliz" />
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="ACTIVIDAD DE BIENESTAR"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/design_default_color_secondary_variant"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/textView72"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Busca un momento del día en el que generalmente estés tranquilo(a). Después, para, piensa en alguna razón por la que estés agradecido(a) y escríbelo."
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/design_default_color_on_secondary"
+                app:fontFamily="casual" />
+
+            <ImageView
+                android:id="@+id/imageView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/aguacate_medit" />
 
             <TextView
-                android:id="@+id/textView59"
+                android:id="@+id/textView73"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="●	Mejorar hábitos alimenticios"
-                android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                android:textColor="@color/design_default_color_on_secondary"
+                android:text="TIP"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
                 app:fontFamily="casual" />
-
-            <ImageView
-                android:id="@+id/imageView21"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/healthy_food" />
 
             <TextView
-                android:id="@+id/textView60"
+                android:id="@+id/textView74"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="●	Mantener adecuados hábitos de sueño"
+                android:layout_height="53dp"
+                android:text="Estas actividades las puedes realizar con ayuda de tu diario."
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="@color/design_default_color_on_secondary"
                 app:fontFamily="casual" />
 
-            <ImageView
-                android:id="@+id/imageView22"
+            <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/aguacate_durm" />
+                android:layout_height="match_parent" >
 
-            <TextView
-                android:id="@+id/textView61"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="●	Establecer rutinas"
-                android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                android:textColor="@color/design_default_color_on_secondary"
-                app:fontFamily="casual" />
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="146dp"
+                    android:layout_height="109dp"
+                    android:onClick="Diario"
+                    app:srcCompat="@drawable/aguacate_rutina" />
 
-            <ImageView
-                android:id="@+id/imageView23"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/aguacate_rutina" />
-
-            <TextView
-                android:id="@+id/textView62"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="●	Comparte actividades de tu gusto con tu familia y amigos"
-                android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                android:textColor="@color/design_default_color_on_secondary"
-                app:fontFamily="casual" />
-
-            <ImageView
-                android:id="@+id/imageView26"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/aguacate_friends" />
-
-            <TextView
-                android:id="@+id/textView63"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="●	Escuchar música alegra y sonríe"
-                android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                android:textColor="@color/design_default_color_on_secondary"
-                app:fontFamily="casual" />
-
-            <ImageView
-                android:id="@+id/imageView25"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/aguacate_danc" />
+                <TextView
+                    android:id="@+id/textView75"
+                    android:layout_width="109dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:onClick="Diario"
+                    android:text="IR A MI DIARIO"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textStyle="bold"
+                    app:fontFamily="casual" />
+            </TableRow>
 
         </LinearLayout>
     </ScrollView>
