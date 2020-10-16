@@ -29,6 +29,7 @@ import java.util.Map;
 public class Diario_R extends AppCompatActivity {
     TextView muestra;
     EditText efecha;
+    EditText diario;
     Button bfeliz,btriste,bmeh,bfrutra,benojo;
     private  int dia,mes,anio;
     private String emocion;
@@ -43,6 +44,7 @@ public class Diario_R extends AppCompatActivity {
         benojo=(Button)findViewById(R.id.ID_enojo);
         bfeliz=(Button)findViewById(R.id.ID_feliz);
         muestra=(TextView)findViewById((R.id.ID_emoción));
+        diario = (EditText) findViewById(R.id.ID_Esc);
     }
 
     public void onClick(View view) {
@@ -60,7 +62,7 @@ public class Diario_R extends AppCompatActivity {
         }
 
         muestra.setText(emocion);
-        diario = (EditText) findViewById(R.id.ID_Esc);
+
     }
 
     public void  Calendario (View view){
