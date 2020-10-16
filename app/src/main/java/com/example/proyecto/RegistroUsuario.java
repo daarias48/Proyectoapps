@@ -47,11 +47,21 @@ public class RegistroUsuario extends AppCompatActivity {
         Context context = this;
         if (contra.getText().toString().equals(confcon.getText().toString())) {
             crud.Registrar("https://ariasdavid.000webhostapp.com/insertar_usuario.php", corr, nomb, nombusu, cont, context);
-            //ejecutarServicio("https://ariasdavid.000webhostapp.com/insertar_usuario.php");
             //ejecutarServicio("http://192.168.0.7:80/proyectoapps/insertar_usuario.php");
+            correo.setText("");
+            nom.setText("");
+            nomusu.setText("");
+            contra.setText("");
+            confcon.setText("");
         }else {
             Toast.makeText(this,"La contraseña es incorrecta. Verifíquela",Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public void Atras (View view){
+            Intent next= new Intent(this,PantallaPrincipal.class);
+            startActivity(next);
+
     }
 
 }

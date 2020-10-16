@@ -47,12 +47,13 @@
         android:layout_height="97dp"
         android:layout_marginStart="156dp"
         android:layout_marginLeft="156dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="156dp"
         android:layout_marginRight="156dp"
         android:background="@drawable/sonido"
         android:onClick="Reproducir"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.982"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ImagSon" />
 
@@ -62,13 +63,12 @@
         android:layout_height="55dp"
         android:layout_marginStart="150dp"
         android:layout_marginLeft="150dp"
-        android:layout_marginTop="44dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/next"
         android:onClick="Next"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintHorizontal_bias="0.908"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
