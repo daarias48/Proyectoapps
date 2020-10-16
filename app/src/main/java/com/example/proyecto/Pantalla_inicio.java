@@ -18,4 +18,9 @@ public class Pantalla_inicio extends AppCompatActivity {
         Intent inf= new Intent(this,Menu_informacion.class);
         startActivity(inf);
     }
+
+    public void  Menuejer (View view){
+        Intent eje= new Intent(this,Menu_ejercicios.class);
+        startActivity(eje);
+    }
 }

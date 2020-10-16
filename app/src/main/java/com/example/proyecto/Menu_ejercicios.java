@@ -6,16 +6,22 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Ejer_autocuidado extends AppCompatActivity {
+public class Menu_ejercicios extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ejer_autocuidado);
+        setContentView(R.layout.activity_menu_ejercicios);
     }
 
     public void  Atras (View view){
-        Intent atr= new Intent(this,Menu_ejercdiario.class);
+        Intent atr= new Intent(this,Pantalla_inicio.class);
         startActivity(atr);
     }
+
+    public void  ejerdiarios (View view){
+        Intent ejr= new Intent(this,Menu_ejercdiario.class);
+        startActivity(ejr);
+    }
+
 }

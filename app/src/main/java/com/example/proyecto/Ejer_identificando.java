@@ -19,4 +19,9 @@ public class Ejer_identificando extends AppCompatActivity {
         startActivity(diar);
     }
 
+    public void  Atras (View view){
+        Intent atr= new Intent(this,Menu_ejercdiario.class);
+        startActivity(atr);
+    }
+
 }

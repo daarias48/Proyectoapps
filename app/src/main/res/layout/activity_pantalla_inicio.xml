@@ -99,6 +99,7 @@
         android:layout_marginEnd="72dp"
         android:layout_marginRight="72dp"
         android:gravity="center_horizontal"
+        android:onClick="Menuejer"
         android:text="Controlando mi ansiedad y estrés"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/design_default_color_on_secondary"
@@ -115,6 +116,7 @@
         android:layout_marginEnd="84dp"
         android:layout_marginRight="84dp"
         android:background="@drawable/cerebro"
+        android:onClick="Menuejer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 

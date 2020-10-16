@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Ejer_gestionando"></activity>
+        <activity android:name=".Menu_ejercdiario"></activity>
+        <activity android:name=".Menu_ejercicios" />
+        <activity android:name=".Ejer_gestionando" />
         <activity android:name=".Ejer_identificando" />
         <activity android:name=".Ejer_autocuidado" />
         <activity android:name=".Pantalla_inicio" />
