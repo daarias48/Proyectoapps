@@ -52,12 +52,12 @@
 
     <Button
         android:id="@+id/button19"
-        android:layout_width="87dp"
-        android:layout_height="113dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginLeft="72dp"
+        android:layout_width="105dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/perro_ansiedad"
+        android:background="@drawable/aguacate_enojado"
         android:onClick="gestionando"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView92" />
@@ -76,12 +76,12 @@
 
     <Button
         android:id="@+id/button21"
-        android:layout_width="91dp"
-        android:layout_height="116dp"
+        android:layout_width="100dp"
+        android:layout_height="106dp"
         android:layout_marginStart="68dp"
         android:layout_marginLeft="68dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/perro_vs"
+        android:background="@drawable/aguacate_pensando"
         android:onClick="identificando"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView94" />
