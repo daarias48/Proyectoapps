@@ -108,4 +108,9 @@ public class Diario_R extends AppCompatActivity {
         requestQueue.add(stringRequest);
 
     }
+
+    public void Atras (View view){
+        Intent sig = new Intent(this, Pantalla_inicio.class);
+        startActivity(sig);
+    }
 }
