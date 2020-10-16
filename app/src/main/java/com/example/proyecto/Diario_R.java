@@ -64,7 +64,7 @@ public class Diario_R extends AppCompatActivity {
         }
 
         muestra.setText(emocion);
-        diario = (EditText) findViewById(R.id.ID_Esc);
+
     }
 
     public void  Calendario (View view){
@@ -83,12 +83,13 @@ public class Diario_R extends AppCompatActivity {
         datePickerDialog.show();
     }
 
+
     public void ejecutarServicio (String URL){
         StringRequest stringRequest = new StringRequest(Request.Method.POST,URL, new Response.Listener<String>(){
 
             @Override
             public void onResponse(String response) {
-                Toast.makeText(getApplicationContext(),"Operación exitosa", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Diario registrado", Toast.LENGTH_SHORT).show();
 
             }
         }, new Response.ErrorListener() {
@@ -102,7 +103,7 @@ public class Diario_R extends AppCompatActivity {
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String,String> parametros = new HashMap<String,String>();
                 parametros.put("fecha",efecha.getText().toString());
-                //parametros.put("emocion",);
+                parametros.put("emocion",muestra.getText().toString());
                 parametros.put("diario",diario.getText().toString());
                 return parametros;
             }
@@ -110,6 +111,10 @@ public class Diario_R extends AppCompatActivity {
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
 
+    }
+
+    public void RegisDiario (View view){
+        ejecutarServicio("https://ariasdavid.000webhostapp.com/insertar_diario.php");
     }
 
     public void Atras (View view){

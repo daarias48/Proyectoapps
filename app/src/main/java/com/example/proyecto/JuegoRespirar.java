@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -30,7 +31,11 @@ public class JuegoRespirar extends AppCompatActivity {
         Animation animation = AnimationUtils.loadAnimation(this,R.anim.scale);
         juegos.Zoom(animation,circulo);
         b.setVisibility(View.INVISIBLE);
+    }
 
+    public void Next (View view){
+        Intent next= new Intent(this,Son_Piano.class);
+        startActivity(next);
     }
 
 

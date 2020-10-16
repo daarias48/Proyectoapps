@@ -23,4 +23,14 @@ public class Pantalla_inicio extends AppCompatActivity {
         Intent eje= new Intent(this,Menu_ejercicios.class);
         startActivity(eje);
     }
+
+    public void Diario (View view){
+        Intent diario= new Intent(this,Diario_R.class);
+        startActivity(diario);
+    }
+
+    public void BtnEmer (View view){
+        Intent btn= new Intent(this,JuegoRespirar.class);
+        startActivity(btn);
+    }
 }
