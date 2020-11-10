@@ -1,6 +1,7 @@
 package com.example.proyecto;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.DownloadManager;
 import android.content.Context;
@@ -18,6 +19,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -25,6 +27,8 @@ public class RegistroUsuario extends AppCompatActivity {
 
     private EditText nom,correo,contra,confcon,nomusu;
     CRUD_usuario crud;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,5 +67,7 @@ public class RegistroUsuario extends AppCompatActivity {
             startActivity(next);
 
     }
+
+
 
 }

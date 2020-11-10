@@ -3,8 +3,10 @@ package com.example.proyecto;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -19,6 +21,8 @@ public class Son_Piano extends AppCompatActivity {
     Animation animarbtn;
     MediaPlayer mp;
     MediaPlayer vector [] = new MediaPlayer[3];
+    ArrayList<Image> vec = new ArrayList<Image>();
+
     int numero;
     public Button btn;
 
