@@ -3,6 +3,8 @@ package com.example.proyecto;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
@@ -24,5 +26,13 @@ public class FrasesLibros extends AppCompatActivity {
         animation.setFillAfter(true);
         marcohojas.startAnimation(animation);
         funcionesRandom.Frases(frase);
+    }
+
+    public void Next (View view){
+        LayoutInflater inflater = getLayoutInflater();
+        View view1 = inflater.inflate(R.layout.dialog_personalizado,null);
+
+        funcionesRandom.MostrarDialogoBasico(this);
+        funcionesRandom.SeleccionJuego(this,view1);
     }
 }

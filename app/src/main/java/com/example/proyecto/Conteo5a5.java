@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.graphics.ImageFormat;
 import android.media.Image;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
@@ -22,6 +23,7 @@ public class Conteo5a5 extends AppCompatActivity {
     public static final int tiempo_despues = 2000;
     int cont =35;
     final int repeticion = 5;
+    FuncionesRandom funcionesRandom = new FuncionesRandom();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,57 +35,16 @@ public class Conteo5a5 extends AppCompatActivity {
         fadeIn.setDuration(duracion);
         fadeIn.setStartOffset(tiempo_despues);
         fadeIn.setFillAfter(true);
+        funcionesRandom.AnimacionConteo(next,conteo);
 
-        final AlphaAnimation fadeOut = new AlphaAnimation(1.0f,0.0f);
-        fadeOut.setDuration(duracion);
-        fadeOut.setStartOffset(tiempo_despues);
-        fadeOut.setFillAfter(true);
-
-        fadeIn.setAnimationListener(new Animation.AnimationListener() {
-            @Override
-            public void onAnimationStart(Animation animation) {
-                cont=cont-5;
-                conteo.setText(String.valueOf(cont));
-
-
-            }
-
-            @Override
-            public void onAnimationEnd(Animation animation) {
-                conteo.startAnimation(fadeOut);
-            }
-
-            @Override
-            public void onAnimationRepeat(Animation animation) {
-
-            }
-        });
-
-        fadeOut.setAnimationListener(new Animation.AnimationListener() {
-            @Override
-            public void onAnimationStart(Animation animation) {
-
-            }
-
-            @Override
-            public void onAnimationEnd(Animation animation) {
-                if(cont>repeticion) {
-                    conteo.startAnimation(fadeIn);
-                    conteo.setVisibility(View.INVISIBLE);
-                }
-                else{
-                    next.setVisibility(View.VISIBLE);
-                }
-            }
-
-            @Override
-            public void onAnimationRepeat(Animation animation) {
-
-            }
-        });
-
-        conteo.startAnimation(fadeIn);
     }
 
+    public void Next(View view){
+        LayoutInflater inflater = getLayoutInflater();
+        View view1 = inflater.inflate(R.layout.dialog_personalizado,null);
+
+        funcionesRandom.MostrarDialogoBasico(this);
+        funcionesRandom.SeleccionJuego(this, view1);
+    }
 
 }

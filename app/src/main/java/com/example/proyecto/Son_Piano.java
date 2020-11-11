@@ -7,6 +7,7 @@ import android.media.Image;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -25,7 +26,7 @@ public class Son_Piano extends AppCompatActivity {
 
     int numero;
     public Button btn;
-
+    FuncionesRandom funcionesRandom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,7 @@ public class Son_Piano extends AppCompatActivity {
         btn = (Button) findViewById(R.id.btn);
         animarbtn =  AnimationUtils.loadAnimation(this,R.anim.negative_scale);
         btn.startAnimation(animarbtn);
+        funcionesRandom = new FuncionesRandom();
     }
 
     public void Reproducir(View view){
@@ -46,8 +48,10 @@ public class Son_Piano extends AppCompatActivity {
     }
 
     public void Next (View view){
-        Intent next= new Intent(this,Pantalla_inicio.class);
-        startActivity(next);
+        LayoutInflater inflater = getLayoutInflater();
+        View view1 = inflater.inflate(R.layout.dialog_personalizado,null);
+        funcionesRandom.MostrarDialogoBasico(this);
+        funcionesRandom.SeleccionJuego(this, view1);
     }
 
 }

@@ -4,9 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 
 public class Pantalla_inicio extends AppCompatActivity {
+
+    FuncionesRandom funcionesRandom = new FuncionesRandom();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +33,10 @@ public class Pantalla_inicio extends AppCompatActivity {
     }
 
     public void BtnEmer (View view){
-        Intent btn= new Intent(this,JuegoRespirar.class);
-        startActivity(btn);
+        LayoutInflater inflater = getLayoutInflater();
+        View view1 = inflater.inflate(R.layout.dialog_personalizado,null);
+        funcionesRandom.SeleccionJuego(this,view1);
+        // Intent btn= new Intent(this,JuegoRespirar.class);
+        //startActivity(btn);
     }
 }

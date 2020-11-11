@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".FrasesLibros"></activity>
-        <activity android:name=".PantallaPrincipal" />
+        <activity android:name=".Texturas" />
         <activity android:name=".Conteo5a5" />
         <activity android:name=".Menu_ejercdiario" />
         <activity android:name=".Menu_ejercicios" />
@@ -29,7 +29,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".Son_Piano" />
         <activity android:name=".JuegoRespirar" />
-        <activity android:name=".Texturas">
+        <activity android:name=".PantallaPrincipal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
