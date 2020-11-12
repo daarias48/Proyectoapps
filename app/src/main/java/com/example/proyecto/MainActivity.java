@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Atras (View view){
-        Intent sig = new Intent(this, PantallaPrincipal.class);
+        Intent sig = new Intent(this, Pantalla_inicio.class);
         startActivity(sig);
     }
 

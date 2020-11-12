@@ -15,7 +15,7 @@
         android:layout_marginLeft="28dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/ovalo"
-        android:text="GUARDAR"
+        android:text="@string/bt_guardar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
@@ -28,7 +28,7 @@
         android:layout_marginRight="32dp"
         android:background="@drawable/ovalo"
         android:onClick="Atras"
-        android:text="Atras"
+        android:text="@string/BtAtr"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
@@ -39,7 +39,7 @@
         android:layout_marginStart="148dp"
         android:layout_marginLeft="148dp"
         android:layout_marginTop="28dp"
-        android:text="MI DIARIO"
+        android:text="@string/titulo_diarior"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -66,7 +66,7 @@
                 android:id="@+id/textView21"
                 android:layout_width="68dp"
                 android:layout_height="wrap_content"
-                android:text="FECHA:"
+                android:text="@string/fecha_diarior"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="@color/design_default_color_on_secondary"
                 app:fontFamily="casual" />
@@ -84,7 +84,7 @@
             android:id="@+id/textView20"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="¿CÓMO ME SIENTO?"
+            android:text="@string/sentir_diarior"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="@color/design_default_color_on_secondary"
             app:fontFamily="casual" />
@@ -152,7 +152,7 @@
             android:id="@+id/textView22"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DESCRIPCIÓN DE MI DÍA:"
+            android:text="@string/descripcion_diarior"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="@color/design_default_color_on_secondary"
             app:fontFamily="casual" />

@@ -24,4 +24,14 @@ public class Menu_ejercicios extends AppCompatActivity {
         startActivity(ejr);
     }
 
+    public void  ejerestir (View view){
+        Intent ejr= new Intent(this,Ejer_estiramiento.class);
+        startActivity(ejr);
+    }
+
+    public void  ejermed (View view){
+        Intent ejr= new Intent(this,ejer_meditacion.class);
+        startActivity(ejr);
+    }
+
 }

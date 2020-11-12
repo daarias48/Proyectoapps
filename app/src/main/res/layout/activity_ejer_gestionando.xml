@@ -17,7 +17,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:gravity="center_horizontal"
-        android:text="EJERCICIOS PARA TODOS LOS DÍAS"
+        android:text="@string/ejer_titulo_ejertododia"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
@@ -63,7 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="GESTIONANDO EMOCIONES"
+                android:text="@string/ejer_gestionando_titulo"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="@color/design_default_color_secondary_variant"
                 android:textStyle="bold"
@@ -90,7 +90,7 @@
                     android:id="@+id/textView78"
                     android:layout_width="343dp"
                     android:layout_height="wrap_content"
-                    android:text="Limpiar ayuda a deshacer de una carga emocional y elimina el estrés, por lo tanto, ordena un armario, tu habitación o un cajón, tira todo lo que no necesitas."
+                    android:text="@string/ejer_gestionando_parte1"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textColor="@color/design_default_color_on_secondary"
                     app:fontFamily="casual" />
@@ -125,7 +125,7 @@
                     android:id="@+id/textView79"
                     android:layout_width="342dp"
                     android:layout_height="match_parent"
-                    android:text="Practica este ejercicio de baile cuando te sientas bloqueado: Elige una sensación o una emoción poco agradable relacionada a una situación presente. "
+                    android:text="@string/ejer_gestionando_parte2"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textColor="@color/design_default_color_on_secondary"
                     app:fontFamily="casual" />
@@ -147,7 +147,7 @@
                     android:id="@+id/textView80"
                     android:layout_width="341dp"
                     android:layout_height="wrap_content"
-                    android:text="Di en voz alta una frase que la simbolice “Estoy bloqueado”; “Estoy triste” y empieza a bailar repitiendo la frase. Esta actividad acompáñala con música alegra de tu gusto."
+                    android:text="@string/ejer_gestionando_parte3"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textColor="@color/design_default_color_on_secondary"
                     app:fontFamily="casual" />
@@ -180,7 +180,7 @@
                     android:id="@+id/textView81"
                     android:layout_width="341dp"
                     android:layout_height="wrap_content"
-                    android:text="Ordena y organiza tu entorno, es decir, tu sitio de trabajo, habitación, cama, etc.  Mantener tus sitios organizado permite un ambiente de tranquilad. "
+                    android:text="@string/ejer_gestionando_parte4"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textColor="@color/design_default_color_on_secondary"
                     app:fontFamily="casual" />

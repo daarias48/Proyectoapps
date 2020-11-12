@@ -15,13 +15,13 @@
         android:layout_marginLeft="116dp"
         android:layout_marginTop="72dp"
         android:fontFamily="casual"
-        android:text="CREA TU CUENTA"
+        android:gravity="start"
+        android:text="@string/titulo_registrar_usuario"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:gravity="start" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button3"

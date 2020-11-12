@@ -12,7 +12,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Menu_ejercdiario"></activity>
+        <activity android:name=".med3"></activity>
+        <activity android:name=".med2" />
+        <activity android:name=".med1" />
+        <activity android:name=".Ejer_estiramiento" />
+        <activity android:name=".ejer_atencionconcentracion" />
+        <activity android:name=".ejer_puntosrojos" />
+        <activity android:name=".ejer_meditacion" />
+        <activity android:name=".Menu_ejercdiario" />
         <activity android:name=".Menu_ejercicios" />
         <activity android:name=".Ejer_gestionando" />
         <activity android:name=".Ejer_identificando" />

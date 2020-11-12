@@ -9,18 +9,19 @@
 
     <TextView
         android:id="@+id/textView86"
-        android:layout_width="263dp"
-        android:layout_height="67dp"
+        android:layout_width="286dp"
+        android:layout_height="62dp"
         android:layout_marginStart="72dp"
         android:layout_marginLeft="72dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="72dp"
         android:layout_marginRight="72dp"
         android:gravity="center_horizontal"
-        android:text="EJERCICIOS PARA CONTROLAR EL ESTRÉS Y LA ANSIEDAD"
+        android:text="@string/menu_ejer_titulo"
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,7 +52,7 @@
 
                 <ImageView
                     android:id="@+id/imageView30"
-                    android:layout_width="wrap_content"
+                    android:layout_width="87dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:onClick="ejerdiarios"
@@ -64,7 +65,7 @@
                     android:layout_weight="1"
                     android:gravity="center_vertical"
                     android:onClick="ejerdiarios"
-                    android:text="Ejercicios Diarios"
+                    android:text="@string/menu_ejer_parte1"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     android:textColor="@color/design_default_color_on_secondary"
                     android:textStyle="bold"
@@ -81,6 +82,7 @@
                     android:layout_width="186dp"
                     android:layout_height="131dp"
                     android:layout_weight="1"
+                    android:onClick="ejermed"
                     app:srcCompat="@drawable/meditar" />
 
                 <TextView
@@ -88,7 +90,8 @@
                     android:layout_width="190dp"
                     android:layout_height="131dp"
                     android:gravity="center_vertical"
-                    android:text="Meditación"
+                    android:onClick="ejermed"
+                    android:text="@string/menu_ejer_parte2"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     android:textColor="@color/design_default_color_on_secondary"
                     android:textStyle="bold"
@@ -115,7 +118,7 @@
                     android:layout_height="130dp"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
-                    android:text="Respiración"
+                    android:text="@string/menu_ejer_parte3"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     android:textColor="@color/design_default_color_on_secondary"
                     android:textStyle="bold"
@@ -133,6 +136,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="ejerestir"
                     app:srcCompat="@drawable/estirar" />
 
                 <TextView
@@ -141,7 +145,8 @@
                     android:layout_height="141dp"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
-                    android:text="Estiramientos"
+                    android:onClick="ejerestir"
+                    android:text="@string/menu_ejer_parte4"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     android:textColor="@color/design_default_color_on_secondary"
                     android:textStyle="bold"

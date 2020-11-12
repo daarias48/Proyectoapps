@@ -17,7 +17,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:gravity="center_horizontal"
-        android:text="EJERCICIOS PARA TODOS LOS DÍAS"
+        android:text="@string/ejer_titulo_ejertododia"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
@@ -63,7 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="RUTINAS DE AUTOCUIDADO"
+                android:text="@string/ejer_autocuidado_titulo"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="@color/design_default_color_secondary_variant"
                 android:textStyle="bold"
@@ -73,7 +73,7 @@
                 android:id="@+id/textView56"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="●	Practica ejercicio físico todos los días (caminar, correr, aeróbicos, subir escaleras y no utilizar el ascensor etc.)"
+                android:text="@string/ejer_autocuidado_parte1"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="@color/design_default_color_on_secondary"
                 app:fontFamily="casual" />
@@ -88,7 +88,7 @@
                 android:id="@+id/textView57"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="●	Realiza ejercicios de meditación, relajación y/o estiramientos"
+                android:text="@string/ejer_autocuidado_parte2"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="@color/design_default_color_on_secondary"
                 app:fontFamily="casual" />
@@ -103,7 +103,7 @@
                 android:id="@+id/textView59"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="●	Mejorar hábitos alimenticios"
+                android:text="@string/ejer_autocuidado_parte3"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="@color/design_default_color_on_secondary"
                 app:fontFamily="casual" />
@@ -118,7 +118,7 @@
                 android:id="@+id/textView60"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="●	Mantener adecuados hábitos de sueño"
+                android:text="@string/ejer_autocuidado_parte4"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="@color/design_default_color_on_secondary"
                 app:fontFamily="casual" />
@@ -133,7 +133,7 @@
                 android:id="@+id/textView61"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="●	Establecer rutinas"
+                android:text="@string/ejer_autocuidado_parte5"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="@color/design_default_color_on_secondary"
                 app:fontFamily="casual" />
@@ -148,7 +148,7 @@
                 android:id="@+id/textView62"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="●	Comparte actividades de tu gusto con tu familia y amigos"
+                android:text="@string/ejer_autocuidado_parte6"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="@color/design_default_color_on_secondary"
                 app:fontFamily="casual" />
@@ -163,7 +163,7 @@
                 android:id="@+id/textView63"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="●	Escuchar música alegra y sonríe"
+                android:text="@string/ejer_autocuidado_parte7"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="@color/design_default_color_on_secondary"
                 app:fontFamily="casual" />
