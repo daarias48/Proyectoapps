@@ -22,7 +22,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
-
+    public static String usuario;
     public EditText correo, contra;
     public TextView aux;
     Intent in;
@@ -45,14 +45,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void Ingresar (View view) {
-        Context context = this;
-        crud.InicioSesion("https://ariasdavid.000webhostapp.com/buscar_usuario.php?correo=" + correo.getText() + "&contrasena=" + contra.getText(),aux,contra,context);
-        int a= crud.x;
-        if (a==1 & !aux.getText().toString().isEmpty()) {
-            in = new Intent(this, Resp.class);
-            startActivity(in);
+        usuario = correo.getText().toString();
+        crud.InicioSesion("https://ariasdavid.000webhostapp.com/validar_usuario.php",correo,contra,this);
 
-        }
     }
 
 

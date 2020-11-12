@@ -3,6 +3,7 @@ package com.example.proyecto;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import android.widget.DatePicker;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -30,9 +32,12 @@ public class Diario_R extends AppCompatActivity {
     TextView muestra;
     EditText efecha;
     Button bfeliz,btriste,bmeh,bfrutra,benojo;
-    EditText diario;
-    private  int dia,mes,anio;
-    private String emocion;
+    EditText diario_esp;
+
+    public int dia,mes,anio;
+    public String emocion;
+
+    Diario crud_diario;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +49,14 @@ public class Diario_R extends AppCompatActivity {
         benojo=(Button)findViewById(R.id.ID_enojo);
         bfeliz=(Button)findViewById(R.id.ID_feliz);
         muestra=(TextView)findViewById((R.id.ID_emoción));
+        diario_esp = (EditText) findViewById(R.id.ID_Esc);
+        crud_diario = new Diario();
+        String value="";
+        Bundle extras = getIntent().getExtras();
+        if(extras !=null){
+            value = extras.getString("hola");
+        }
+        diario_esp.setText(value);
     }
 
     public void onClick(View view) {
@@ -61,51 +74,23 @@ public class Diario_R extends AppCompatActivity {
         }
 
         muestra.setText(emocion);
-        diario = (EditText) findViewById(R.id.ID_Esc);
+
     }
 
     public void  Calendario (View view){
-        final Calendar c= Calendar.getInstance();
-        dia=c.get(Calendar.DAY_OF_MONTH);
-        mes=c.get(Calendar.MONTH);
-        anio=c.get(Calendar.YEAR);
-
-        DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                efecha.setText(dayOfMonth+"/"+(monthOfYear+1)+"/"+year);
-            }
-        }
-                ,dia,mes,anio);
-        datePickerDialog.show();
+        Context context = this;
+        crud_diario.Calendario(dia,mes,anio,efecha,context);
     }
 
-    public void ejecutarServicio (String URL){
-        StringRequest stringRequest = new StringRequest(Request.Method.POST,URL, new Response.Listener<String>(){
-
-            @Override
-            public void onResponse(String response) {
-                Toast.makeText(getApplicationContext(),"Operación exitosa", Toast.LENGTH_SHORT).show();
-
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getApplicationContext(),error.toString(),Toast.LENGTH_SHORT).show();
-            }
-        }) {
-            @Override
-
-            protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String,String> parametros = new HashMap<String,String>();
-                parametros.put("fecha",efecha.getText().toString());
-                //parametros.put("emocion",);
-                parametros.put("diario",diario.getText().toString());
-                return parametros;
-            }
-        };
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
-        requestQueue.add(stringRequest);
+    public void RegisDiario (View view){
+        String fecha = efecha.getText().toString();
+        String emocion = muestra.getText().toString();
+        String diario = diario_esp.getText().toString();
+        Context context = this;
+        crud_diario.RegistrarDiario("https://ariasdavid.000webhostapp.com/insertar_diario.php",fecha,emocion,diario,context);
+        efecha.setText("");
+        muestra.setText("");
+        diario_esp.setText("");
 
     }
 

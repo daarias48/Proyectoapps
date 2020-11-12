@@ -1,6 +1,7 @@
 package com.example.proyecto;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.DownloadManager;
 import android.content.Context;
@@ -18,6 +19,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -25,6 +27,8 @@ public class RegistroUsuario extends AppCompatActivity {
 
     private EditText nom,correo,contra,confcon,nomusu;
     CRUD_usuario crud;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,11 +51,23 @@ public class RegistroUsuario extends AppCompatActivity {
         Context context = this;
         if (contra.getText().toString().equals(confcon.getText().toString())) {
             crud.Registrar("https://ariasdavid.000webhostapp.com/insertar_usuario.php", corr, nomb, nombusu, cont, context);
-            //ejecutarServicio("https://ariasdavid.000webhostapp.com/insertar_usuario.php");
             //ejecutarServicio("http://192.168.0.7:80/proyectoapps/insertar_usuario.php");
+            correo.setText("");
+            nom.setText("");
+            nomusu.setText("");
+            contra.setText("");
+            confcon.setText("");
         }else {
             Toast.makeText(this,"La contraseña es incorrecta. Verifíquela",Toast.LENGTH_SHORT).show();
         }
     }
+
+    public void Atras (View view){
+            Intent next= new Intent(this,PantallaPrincipal.class);
+            startActivity(next);
+
+    }
+
+
 
 }

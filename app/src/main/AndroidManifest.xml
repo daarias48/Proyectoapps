@@ -3,8 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.proyecto">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,6 +17,11 @@
         <activity android:name=".ejer_atencionconcentracion" />
         <activity android:name=".ejer_puntosrojos" />
         <activity android:name=".ejer_meditacion" />
+        <activity android:name=".Menu_ejercdiario" />
+        <activity android:name=".MostrarDiarios"></activity>
+        <activity android:name=".FrasesLibros" />
+        <activity android:name=".Texturas" />
+        <activity android:name=".Conteo5a5" />
         <activity android:name=".Menu_ejercdiario" />
         <activity android:name=".Menu_ejercicios" />
         <activity android:name=".Ejer_gestionando" />
@@ -43,5 +46,8 @@
             </intent-filter>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
