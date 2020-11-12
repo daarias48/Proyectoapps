@@ -93,9 +93,13 @@ public class MostrarDiarios extends AppCompatActivity implements Response.ErrorL
         adapter.SetOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String fecha = listaDiario.get(recyclerDiario.getChildAdapterPosition(v)).getTexto();
-                Intent intent = new Intent(getApplicationContext(), Diario_R.class);
-                intent.putExtra("hola",fecha);
+                String diario = listaDiario.get(recyclerDiario.getChildAdapterPosition(v)).getTexto();
+                String fecha = listaDiario.get(recyclerDiario.getChildAdapterPosition(v)).getFecha();
+                String emocion = listaDiario.get(recyclerDiario.getChildAdapterPosition(v)).getEmocion();
+                Intent intent = new Intent(getApplicationContext(), Modif_Elim_Diario.class);
+                intent.putExtra("hola",diario);
+                intent.putExtra("fecha",fecha);
+                intent.putExtra("emocion",emocion);
                 getApplicationContext().startActivity(intent);
             }
         });
@@ -106,7 +110,15 @@ public class MostrarDiarios extends AppCompatActivity implements Response.ErrorL
             Toast.makeText(this,"No se pudo",Toast.LENGTH_SHORT).show();
             progress.hide();
         }
+    }
 
+    public void Agregar (View view){
+            Intent sig = new Intent(this, Diario_R.class);
+            startActivity(sig);
+    }
 
+    public void Atras (View view){
+        Intent sig = new Intent(this, Pantalla_inicio.class);
+        startActivity(sig);
     }
 }

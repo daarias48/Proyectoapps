@@ -20,6 +20,8 @@ import java.util.Map;
 
 public class Diario {
 
+    MainActivity main = new MainActivity();
+
     public void RegistrarDiario (String URL, final String fecha, final String emocion, final String diario, final Context context){
         StringRequest stringRequest = new StringRequest(Request.Method.POST,URL, new Response.Listener<String>(){
 
@@ -41,6 +43,8 @@ public class Diario {
                 parametros.put("fecha",fecha);
                 parametros.put("emocion",emocion);
                 parametros.put("diario",diario);
+                String correo = main.usuario;
+                parametros.put("correo_usu",correo);
                 return parametros;
             }
         };
@@ -64,7 +68,60 @@ public class Diario {
         datePickerDialog.show();
     }
 
-    public void ConsultarDiarios(String URL){
 
+    public void ModificarDiario (String URL, final String fecha, final String emocion, final String diario, final Context context){
+        StringRequest stringRequest = new StringRequest(Request.Method.POST,URL, new Response.Listener<String>(){
+
+            @Override
+            public void onResponse(String response) {
+                Toast.makeText(context,"Diario Modificado", Toast.LENGTH_SHORT).show();
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(context,error.toString(),Toast.LENGTH_SHORT).show();
+            }
+        }) {
+            @Override
+
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String,String> parametros = new HashMap<String,String>();
+
+                parametros.put("fecha",fecha);
+                parametros.put("emocion",emocion);
+                parametros.put("diario",diario);
+
+                return parametros;
+            }
+        };
+        RequestQueue requestQueue = Volley.newRequestQueue(context);
+        requestQueue.add(stringRequest);
+    }
+
+    public void EliminarDiario (String URL, final String fecha, final Context context){
+        StringRequest stringRequest = new StringRequest(Request.Method.POST,URL, new Response.Listener<String>(){
+
+            @Override
+            public void onResponse(String response) {
+                Toast.makeText(context,"Diario Eliminado", Toast.LENGTH_SHORT).show();
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(context,error.toString(),Toast.LENGTH_SHORT).show();
+            }
+        }) {
+            @Override
+
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String,String> parametros = new HashMap<String,String>();
+                parametros.put("fecha",fecha);
+                return parametros;
+            }
+        };
+        RequestQueue requestQueue = Volley.newRequestQueue(context);
+        requestQueue.add(stringRequest);
     }
 }

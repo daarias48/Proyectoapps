@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MostrarDiarios"></activity>
+        <activity android:name=".Modif_Elim_Diario"></activity>
+        <activity android:name=".MostrarDiarios" />
         <activity android:name=".FrasesLibros" />
         <activity android:name=".Texturas" />
         <activity android:name=".Conteo5a5" />
@@ -38,8 +39,8 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
 </manifest>
