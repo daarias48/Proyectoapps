@@ -24,8 +24,8 @@
     <!--INTERFAZ PANTALLA INICIO-->
     <string name="Botoninfo">Informate</string>
     <string name="Botonemer">Bot</string>
-
-
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

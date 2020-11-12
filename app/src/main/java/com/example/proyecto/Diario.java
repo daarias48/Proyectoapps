@@ -63,4 +63,8 @@ public class Diario {
                 ,dia,mes,anio);
         datePickerDialog.show();
     }
+
+    public void ConsultarDiarios(String URL){
+
+    }
 }

@@ -51,6 +51,12 @@ public class Diario_R extends AppCompatActivity {
         muestra=(TextView)findViewById((R.id.ID_emoción));
         diario_esp = (EditText) findViewById(R.id.ID_Esc);
         crud_diario = new Diario();
+        String value="";
+        Bundle extras = getIntent().getExtras();
+        if(extras !=null){
+            value = extras.getString("hola");
+        }
+        diario_esp.setText(value);
     }
 
     public void onClick(View view) {

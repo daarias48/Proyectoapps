@@ -28,7 +28,7 @@ public class Pantalla_inicio extends AppCompatActivity {
     }
 
     public void Diario (View view){
-        Intent diario= new Intent(this,Diario_R.class);
+        Intent diario= new Intent(this,MostrarDiarios.class);
         startActivity(diario);
     }
 

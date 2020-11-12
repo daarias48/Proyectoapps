@@ -55,40 +55,37 @@ public class CRUD_usuario {
         requestQueue.add(stringRequest);
     }
 
-    public int InicioSesion (String URL, final TextView aux, final TextView contra, final Context context){
-
-        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(URL, new Response.Listener<JSONArray>() {
+    public void InicioSesion (String URL, final TextView usuario, final TextView contra, final Context context){
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
-            public void onResponse(JSONArray response) {
-
-                JSONObject jsonObject = null;
-                for (int i = 0; i < response.length(); i++) {
-                    try {
-                        jsonObject = response.getJSONObject(i);
-                        aux.setText(jsonObject.getString("contrasena"));
-
-                            if (aux.getText().toString().equals(contra.getText().toString())) {
-                                Toast.makeText(context, "Cargando...", Toast.LENGTH_SHORT).show();
-                                x = 1;
-                            }
-                    } catch (JSONException e) {
-                        Toast.makeText(context, e.getMessage(), Toast.LENGTH_SHORT).show();
-
-                    }
-
+            public void onResponse(String response) {
+                if (!response.isEmpty()){
+                    Toast.makeText(context,"Cargando...",Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(context,Resp.class);
+                    context.startActivity(intent);
                 }
-
+                else{
+                    Toast.makeText(context,"Usuario o contraseña incorrecta",Toast.LENGTH_SHORT).show();
+                }
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(context, "No está registrado", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context,"NO INGRESA"+error.toString(),Toast.LENGTH_SHORT).show();
             }
-        }
-        );
+        }){
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String,String> parametros = new HashMap<String, String>();
+                parametros.put("correo",usuario.getText().toString());
+                parametros.put("contrasena",contra.getText().toString());
+                return parametros;
+            }
+        };
+
         RequestQueue requestQueue = Volley.newRequestQueue(context);
-        requestQueue.add(jsonArrayRequest);
-        return x;
+        requestQueue.add(stringRequest);
+
     }
 
 }
