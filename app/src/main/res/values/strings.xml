@@ -201,4 +201,7 @@
     <string name="dialogo_respuesta1">Mucho mejor</string>
     <string name="dialogo_respuesta2">Aún no</string>
 
+    <!--INTERFAZ RESPIRAR-->
+    <string name="respirar_titulo">RELÁJATE Y RESPIRA</string>
+
 </resources>

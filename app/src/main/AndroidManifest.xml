@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.proyecto">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,9 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Modif_Elim_Diario"></activity>
+        <activity android:name=".respiracion"></activity>
+        <activity android:name=".Modif_Elim_Diario" />
         <activity android:name=".MostrarDiarios" />
-        <activity android:name=".med3"></activity>
+        <activity android:name=".med3" />
         <activity android:name=".med2" />
         <activity android:name=".med1" />
         <activity android:name=".Ejer_estiramiento" />
@@ -46,8 +50,5 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
 </manifest>
