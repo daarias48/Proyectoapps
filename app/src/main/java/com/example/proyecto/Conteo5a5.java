@@ -19,8 +19,8 @@ public class Conteo5a5 extends AppCompatActivity {
 
     TextView conteo;
     Button next;
-    public static final int duracion = 1500;
-    public static final int tiempo_despues = 2000;
+    public static final int duracion = 300;
+    public static final int tiempo_despues = 300;
     int cont =35;
     final int repeticion = 5;
     FuncionesRandom funcionesRandom = new FuncionesRandom();

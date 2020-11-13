@@ -30,8 +30,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerDiario"
-        android:layout_width="384dp"
-        android:layout_height="497dp"
+        android:layout_width="366dp"
+        android:layout_height="396dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginEnd="20dp"
@@ -40,16 +40,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView101" />
 
-    <Button
-        android:id="@+id/button25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginLeft="112dp"
-        android:layout_marginEnd="112dp"
-        android:layout_marginRight="112dp"
-        android:text="Button"
+    <LinearLayout
+        android:layout_width="342dp"
+        android:layout_height="125dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerDiario" />
+        app:layout_constraintTop_toBottomOf="@+id/recyclerDiario">
+
+        <Button
+            android:id="@+id/button25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ovalo"
+            android:onClick="Agregar"
+            android:text="Agregar" />
+
+        <Button
+            android:id="@+id/button26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ovalo"
+            android:onClick="Atras"
+            android:text="ATRAS" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
