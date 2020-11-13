@@ -32,7 +32,7 @@
         android:layout_marginRight="112dp"
         android:fontFamily="casual"
         android:gravity="start"
-        android:text="INICIO DE SESIÓN"
+        android:text="@string/iniciosesion_titulo"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold"
@@ -60,7 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Correo electrónico"
+            android:hint="@string/ECorreo"
             android:inputType="textPersonName"
             android:typeface="monospace" />
 
@@ -69,7 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Contraseña"
+            android:hint="@string/Econtra"
             android:inputType="textPassword"
             android:textSize="18sp"
             android:typeface="monospace" />
@@ -87,7 +87,7 @@
         android:layout_marginRight="30dp"
         android:background="@drawable/ovalo"
         android:onClick="Atras"
-        android:text="ATRAS"
+        android:text="@string/BtAtras"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

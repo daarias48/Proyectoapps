@@ -33,4 +33,14 @@ public class Menu_ejercdiario extends AppCompatActivity {
         Intent ide= new Intent(this,Ejer_identificando.class);
         startActivity(ide);
     }
+
+    public void  atencion (View view){
+        Intent ate= new Intent(this,ejer_atencionconcentracion.class);
+        startActivity(ate);
+    }
+
+    public void  puntos (View view){
+        Intent ate= new Intent(this,ejer_puntosrojos.class);
+        startActivity(ate);
+    }
 }

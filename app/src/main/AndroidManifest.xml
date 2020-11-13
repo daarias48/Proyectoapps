@@ -12,6 +12,15 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Modif_Elim_Diario"></activity>
         <activity android:name=".MostrarDiarios" />
+        <activity android:name=".med3"></activity>
+        <activity android:name=".med2" />
+        <activity android:name=".med1" />
+        <activity android:name=".Ejer_estiramiento" />
+        <activity android:name=".ejer_atencionconcentracion" />
+        <activity android:name=".ejer_puntosrojos" />
+        <activity android:name=".ejer_meditacion" />
+        <activity android:name=".Menu_ejercdiario" />
+        <activity android:name=".MostrarDiarios"></activity>
         <activity android:name=".FrasesLibros" />
         <activity android:name=".Texturas" />
         <activity android:name=".Conteo5a5" />

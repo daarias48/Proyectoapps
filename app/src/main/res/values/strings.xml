@@ -5,6 +5,8 @@
     <string name="Bingreso">Ingresar</string>
     <string name="BCC">Crear cuenta</string>
     <string name="BtAtr">Atras</string>
+    <string name="iniciosesion_titulo">INICIO DE SESIÓN</string>
+
     <!--INTERFAZ REGISTROUSUARIO-->
     <string name="Enom">Nombre</string>
     <string name="Eusu">Nombre de usuario</string>
@@ -27,5 +29,176 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+
+    <!--INTERFAZ DIARIOR-->
+    <string name="titulo_diarior">MI DIARIO</string>
+    <string name="fecha_diarior">FECHA:</string>
+    <string name="sentir_diarior">¿CÓMO ME SIENTO?</string>
+    <string name="descripcion_diarior">DESCRIPCIÓN DE MI DÍA</string>
+    <string name="bt_guardar">GUARDAR</string>
+
+    <!--INTERFAZ IMPORTANTES-->
+    <string name="ejer_titulo_ejertododia">EJERCICIOS PARA TODOS LOS DÍAS</string>
+    <string name="IMPORTANTE">IMPORTANTE</string>
+    <string name="ejemplo">EJEMPLO</string>
+    <string name="sintomas">SINTOMAS</string>
+    <string name="causas">CAUSAS</string>
+
+    <!--INTERFAZ EJERC ATENCIÓN Y CONCENTRACIÓN-->
+    <string name="ejer_titulo_atencion_concentracion">ATENCIÓN Y CONCENTRACIÓN</string>
+    <string name="ejeraten_parte1">Enciende una vela y quédate mirándola la llama un minuto, sin pensar en nada más. </string>
+    <string name="ejeraten_parte2">Cuando tu pensamiento se escape retorna a la vela. Puedes poner una alarma de un minuto. </string>
+
+    <!--INTERFAZ EJERC AUTOCUIDADO-->
+    <string name="ejer_autocuidado_titulo">RUTINAS DE AUTOCUIDADO</string>
+    <string name="ejer_autocuidado_parte1">●	Practica ejercicio físico todos los días (caminar, correr, aeróbicos, subir escaleras y no utilizar el ascensor etc)</string>
+    <string name="ejer_autocuidado_parte2">●	Realiza ejercicios de meditación, relajación y/o estiramientos</string>
+    <string name="ejer_autocuidado_parte3">●	Mejorar hábitos alimenticios</string>
+    <string name="ejer_autocuidado_parte4">●	Mantener adecuados hábitos de sueño</string>
+    <string name="ejer_autocuidado_parte5">●	Establecer rutinas</string>
+    <string name="ejer_autocuidado_parte6">●	Comparte actividades de tu gusto con tu familia y amigos</string>
+    <string name="ejer_autocuidado_parte7">●	Escuchar música alegra y sonríe</string>
+
+    <!--INTERFAZ ESTIRAMIENTO-->
+    <string name="ejer_estiramiento_titulo">ESTIRAMIENTOS</string>
+    <string name="ejer_estiramiento_parte1">Algunas veces al día, has una pausa activa y realizar los siguientes estiramientos:</string>
+    <string name="ejer_estiramiento_parte2">●   Gira la cabeza hacia la derecha de manera muy suave quedándose 2 o 3 segundos y luego hacia la izquierda.</string>
+    <string name="ejer_estiramiento_parte3">●	Elevar los hombros durante 2 ó 3 segundo y se repite 3 veces.</string>
+    <string name="ejer_estiramiento_parte4">●	Eleva los brazos, juntando las muñecas, repitiendo dos o tres veces.</string>
+
+    <!--INTERFAZ EJERC GESTIONANDO-->
+    <string name="ejer_gestionando_titulo">GESTIONANDO EMOCIONES</string>
+    <string name="ejer_gestionando_parte1">Limpiar ayuda a deshacer de una carga emocional y elimina el estrés, por lo tanto, ordena un armario, tu habitación o un cajón, tira todo lo que no necesites.</string>
+    <string name="ejer_gestionando_parte2">Practica este ejercicio de baile cuando te sientas bloqueado: Elige una sensación o una emoción poco agradable relacionada a una situación presente.</string>
+    <string name="ejer_gestionando_parte3">Di en voz alta una frase que la simbolice “Estoy bloqueado”; “Estoy triste” y empieza a bailar repitiendo la frase. Esta actividad acompáñala con música alegra de tu gusto.</string>
+    <string name="ejer_gestionando_parte4">Ordena y organiza tu entorno, es decir, tu sitio de trabajo, habitación, cama, etc.  Mantener tus sitios organizado permite un ambiente de tranquilad.</string>
+
+    <!--INTERFAZ EJERC IDENTIFICANDO-->
+    <string name="ejer_identificando_titulo">IDENTIFICANDO EMOCIONES Y PENSAMIENTOS</string>
+    <string name="ejer_identificando_parte1">Identificar las causas que nos producen estrés o ansiedad y escribirlas, a ser posible, en el mismo instante cuando se producen.</string>
+    <string name="ejer_identificando_parte2">Posteriormente hemos de esforzarnos en escribir los pensamientos racionales y realistas como antídoto de los tóxicos pensamientos negativos.</string>
+    <string name="ejer_identificando_parte3">Leer una y otra vez en voz alta los pensamientos realistas y positivos.</string>
+
+    <string name="ejer_bienestar_titulo">ACTIVIDAD DE BIENESTAR</string>
+    <string name="ejer_bienestar_parte1">Busca un momento del día en el que generalmente estés tranquilo(a). Después, para, piensa en alguna razón por la que estés agradecido(a) y escríbelo.</string>
+    <string name="ejer_bienestar_parte2">CONSEJO</string>
+    <string name="ejer_bienestar_parte3">Estas actividades las puedes realizar con ayuda de tu diario.</string>
+    <string name="ejer_bienestar_parte4">IR A MI DIARIO</string>
+
+    <!--INTERFAZ MEDITACIÓN-->
+    <string name="ejer_meditacion_titulo">MEDITACIÓN</string>
+    <string name="ejer_meditacion_parte1">UN RESPIRO ES IMPORTANTE</string>
+    <string name="ejer_meditacion_parte2">La meditación es un excelente ejercicio para poder disminuir el estrés y la ansiedad, pues nos brinda un espacio de calma y tranquilidad.</string>
+    <string name="ejer_meditacion_parte3">Es por ello que puedes encontrar tres ejercicios de meditación para realizar a diario.</string>
+    <string name="ejer_meditacion_parte4">NOTA:</string>
+    <string name="ejer_meditacion_parte5">Para acceder a estos ejecicios debes tener conexión a internet.</string>
+    <string name="ejer_meditacion_parte6">●	Meditación ataques de pánico</string>
+    <string name="ejer_meditacion_parte7">●	Meditación nervios o estrés</string>
+    <string name="ejer_meditacion_parte8">●	Meditación ansiedad</string>
+    <string name="ejer_meditacion_parte9">IR A MEDITACIÓN</string>
+
+    <!--INTERFAZ EJER PUNTOS ROJOS-->
+    <string name="ejer_puntosrojos_titulo">VIVE EL AQUÍ Y EL AHORA</string>
+    <string name="ejer_puntosrojos_parte1">Desconéctate de tu celular durante dos horas, presta atención a las cosas que no ponías atención antes.</string>
+    <string name="ejer_puntosrojos_parte2">Identifica en qué momento sientes el impulso de consultar tu móvil y que sensaciones tienes.</string>
+    <string name="ejer_puntosrojos_parte3">●	Incomodidad</string>
+    <string name="ejer_puntosrojos_parte4">●	Inseguridad</string>
+
+    <!--INTERFAZ INFO ANSIEDAD-->
+    <string name="info_ansiedad_titulo">ANSIEDAD</string>
+    <string name="info_ansiedad_parte1">¿QUÉ ES LA ANSIEDAD?</string>
+    <string name="info_ansiedad_parte2">Es una sensación de miedo con opresión en el pecho y dificultad de respirar, se presenta como una sensación de amenaza y peligro unida al sentimiento de indefensión por la anticipación de una situación.</string>
+    <string name="info_ansiedad_parte3">●	Un ataque de ansiedad no implica la muerte ni vas a enloquecer.</string>
+    <string name="info_ansiedad_parte4">●	Si las crisis de ansiedad afectan tu vida diaria, es importante consultar a un profesional en un centro de salud o en las líneas de emergencia de tu país.</string>
+    <string name="info_ansiedad_parte5">●	Respiración acelerada</string>
+    <string name="info_ansiedad_parte6">●	Sudoración</string>
+    <string name="info_ansiedad_parte7">●	Aceleración ritmo cardiaco</string>
+    <string name="info_ansiedad_parte8">●	Temblores</string>
+    <string name="info_ansiedad_parte9">●	Visión borrosa</string>
+    <string name="info_ansiedad_parte10">●	Angustia</string>
+    <string name="info_ansiedad_parte11">●	Genéticas:</string>
+    <string name="info_ansiedad_parte12">Heredado.</string>
+    <string name="info_ansiedad_parte13">●	Metabólicas: </string>
+    <string name="info_ansiedad_parte14">Tiene que ver con nuestro cerebro y las conexiones sinápticas.</string>
+    <string name="info_ansiedad_parte15">●	Comportamental:</string>
+    <string name="info_ansiedad_parte16">Estrés al pensar en situaciones ser externas: problema laboral, problemas de parejas, dificultades laborales o académicas, periodo de exámenes. </string>
+
+    <!--INTERFAZ INFO ESTRÉS-->
+    <string name="info_estres_titulo">ESTRÉS</string>
+    <string name="info_estres_parte1">¿QUÉ ES EL ESTRÉS?</string>
+    <string name="info_estres_parte2">Se define como la reacción fisiológica del organismo en el que entran en juego diversos mecanismos de defensa para afrontar una situación que se percibe como amenazante o de demanda incrementada. </string>
+    <string name="info_estres_parte3">El estrés es una respuesta natural y necesaria para la supervivencia. Cuando esta respuesta natural se da en exceso se produce una sobrecarga de tensión que repercute en el organismo y provoca la aparición de enfermedades y anomalías patológicas que impiden el normal desarrollo y funcionamiento del cuerpo humano. </string>
+    <string name="info_estres_parte4">●	Diarrea o estreñimiento</string>
+    <string name="info_estres_parte5">●	Mala memoria</string>
+    <string name="info_estres_parte6">●	Dolores y achaques frecuentes</string>
+    <string name="info_estres_parte7">●	Dolores de cabeza</string>
+    <string name="info_estres_parte8">●	Falta de energía o concentración</string>
+    <string name="info_estres_parte9">●	Cuello o mandíbula rígidos</string>
+    <string name="info_estres_parte10">●	Cansancio</string>
+    <string name="info_estres_parte11">Las causas del estrés pueden variar en función de la situación y de la persona, entre las causas más comunes tenemos:</string>
+    <string name="info_estres_parte12">●	Aumento de la carga de trabajo</string>
+    <string name="info_estres_parte13">●	Situaciones estresantes en el trabajo, fallecimiento, separación</string>
+    <string name="info_estres_parte14">●	Problemas académicos, laborales o familiares</string>
+
+    <!--INTERFAZ INFO VS-->
+    <string name="info_vs_titulo">ANSIEDAD VS ESTRÉS</string>
+    <string name="info_vs_parte1">Como hemos visto, la causa del estrés es la presencia real de un factor estresante. En cambio, en la ansiedad, esa respuesta del organismo continúa presente cuando ya ha desaparecido tal estímulo estresante, es una respuesta emocional de aprehensión, inquietud, desasosiego que se produce, como ya se ha dicho, en ausencia de un estímulo claro.</string>
+
+    <!--INTERFAZ JUEGO RESPIRAR-->
+    <string name="juego_respirar_titulo">Concéntrate en tu respiración</string>
+    <string name="btempezar">EMPEZAR</string>
+
+    <!--INTERFAZ MENÚ EJERCICIOS-->
+    <string name="menu_ejer_titulo">EJERCICIOS PARA CONTROLAR EL ESTRÉS Y LA ANSIEDAD</string>
+    <string name="menu_ejer_parte1">Ejercicios Diarios</string>
+    <string name="menu_ejer_parte2">Meditación</string>
+    <string name="menu_ejer_parte3">Respiración</string>
+    <string name="menu_ejer_parte4">Estiramientos</string>
+
+    <!--INTERFAZ MENÚ INFORMACIÓN-->
+    <string name="menu_info_titulo">INFORMACIÓN SOBRE SALUD MENTAL</string>
+    <string name="menu_info_parte1">Sobre la ansiedad</string>
+    <string name="menu_info_parte2">Sobre el estrés</string>
+    <string name="menu_info_parte3">Ansiedad vs Estrés</string>
+
+    <!--INTERFAZ PANTALLA DE INICIO-->
+    <string name="pantalla_inicio_titulo">STOP AND BREATHE</string>
+    <string name="pantalla_inicio_parte1">CONOCIENDO SOBRE MI SALUD MENTAL</string>
+    <string name="pantalla_inicio_parte2">CONTROLANDO MI ANSIEDAD Y ESTRÉS</string>
+    <string name="pantalla_inicio_parte3">MI DIARIO</string>
+    <string name="pantalla_inicio_parte4">CERRAR SESIÓN</string>
+
+    <!--INTERFAZ PANTALLA PRINCIPAL-->
+    <string name="btiniciosesion">INICIAR SESIÓN</string>
+    <string name="btregistrarse">REGISTRARSE</string>
+
+    <!--INTERFAZ REGISTRO USUARIOL-->
+    <string name="titulo_registrar_usuario">CREA TU CUENTA</string>
+
+    <!--INTERFAZ DESCARGO DE RESPONSABILIDAD-->
+    <string name="descargo_titulo">DESCARGO DE RESPONSABILIDAD</string>
+    <string name="descargo_cuerpo">Esta aplicación es una guía adaptada a las personas que desean controlar la ansiedad, el estrés y los ataques de pánico, sin embargo, no sustituye el consejo médico de un profesional de la salud calificado. Debido a que existen condiciones médicas que imitan los sintomas de un ataque de pánico, es recomendable realizar una evaluación médica antes de iniciar cualquier ejercicio que se encuentre en esta guía.</string>
+    <string name="descargo_bt_acepto">ACEPTO</string>
+
+    <!--INTERFAZ SON PIANO-->
+    <string name="titulo_son_piano">IDENTIFICA EL SONIDO</string>
+
+    <!--CONTEO 5 A 5-->
+    <string name="conteo5a5_titulo">RELÁJATE Y CUENTA</string>
+
+    <!--FRASES LIBROS-->
+    <string name="frases_titulo">SIMPLEMENTE LEE...</string>
+
+    <!--PANTALLA DE DIARIOS-->
+    <string name="mostrar_diaros_titulo">MIS DIARIOS</string>
+
+    <!--PANTALLA DE TEXTURAS-->
+    <string name="texturas_titulo">DESCRIBE LA TEXTURA</string>
+    <string name="texturas_caja">Describe la textura</string>
+
+    <!--CUADRO DE DIALOGO-->
+    <string name="dialogo_pregunta">¿Te sientes mejor?</string>
+    <string name="dialogo_respuesta1">Mucho mejor</string>
+    <string name="dialogo_respuesta2">Aún no</string>
 
 </resources>

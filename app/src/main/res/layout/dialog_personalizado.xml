@@ -21,11 +21,11 @@
         android:id="@+id/text_dialog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_margin="32dp"
-        android:text="¿Te sientes mejor?"
+        android:text="@string/dialogo_pregunta"
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
-        android:layout_gravity="center"
 
         tools:ignore="MissingConstraints"></TextView>
     
@@ -39,21 +39,21 @@
             android:id="@+id/btnmejor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
             android:layout_weight="1"
             android:background="#48E4C5"
-            android:layout_marginEnd="6dp"
-            android:text="Mucho mejor"
-            android:layout_marginRight="6dp" />
+            android:text="@string/dialogo_respuesta1" />
 
         <Button
             android:id="@+id/btn_no"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginLeft="6dp"
+            android:layout_weight="1"
             android:background="#48E4C5"
 
-            android:text="Aún no" />
+            android:text="@string/dialogo_respuesta2" />
     </LinearLayout>
 
 </LinearLayout>

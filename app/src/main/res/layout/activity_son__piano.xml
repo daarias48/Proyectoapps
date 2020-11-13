@@ -18,7 +18,7 @@
         android:layout_marginRight="92dp"
         android:fontFamily="casual"
         android:gravity="start"
-        android:text="IDENTIFICA EL SONIDO"
+        android:text="@string/titulo_son_piano"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold"
