@@ -83,6 +83,7 @@
                     android:layout_width="179dp"
                     android:layout_height="140dp"
                     android:layout_weight="1"
+                    android:onClick="ejermed"
                     app:srcCompat="@drawable/cactus_meditando" />
 
                 <TextView
@@ -90,6 +91,7 @@
                     android:layout_width="184dp"
                     android:layout_height="124dp"
                     android:gravity="center_vertical"
+                    android:onClick="ejermed"
                     android:text="Meditación"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     android:textColor="@color/design_default_color_on_secondary"
@@ -117,9 +119,8 @@
                     android:layout_height="130dp"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
-                    android:text="Respiración"
                     android:onClick="ejermed"
-                    android:text="@string/menu_ejer_parte2"
+                    android:text="@string/menu_ejer_parte3"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     android:textColor="@color/design_default_color_on_secondary"
                     android:textStyle="bold"
@@ -137,6 +138,7 @@
                     android:layout_width="106dp"
                     android:layout_height="155dp"
                     android:layout_weight="1"
+                    android:onClick="ejerestir"
                     app:srcCompat="@drawable/estirar_aguacate" />
 
                 <TextView

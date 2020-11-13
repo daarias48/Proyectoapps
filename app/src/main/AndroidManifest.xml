@@ -20,11 +20,9 @@
         <activity android:name=".ejer_puntosrojos" />
         <activity android:name=".ejer_meditacion" />
         <activity android:name=".Menu_ejercdiario" />
-        <activity android:name=".MostrarDiarios"></activity>
         <activity android:name=".FrasesLibros" />
         <activity android:name=".Texturas" />
         <activity android:name=".Conteo5a5" />
-        <activity android:name=".Menu_ejercdiario" />
         <activity android:name=".Menu_ejercicios" />
         <activity android:name=".Ejer_gestionando" />
         <activity android:name=".Ejer_identificando" />
