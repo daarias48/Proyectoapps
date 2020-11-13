@@ -79,8 +79,8 @@
 
                 <ImageView
                     android:id="@+id/imageView27"
-                    android:layout_width="186dp"
-                    android:layout_height="131dp"
+                    android:layout_width="149dp"
+                    android:layout_height="129dp"
                     android:layout_weight="1"
                     android:onClick="ejermed"
                     app:srcCompat="@drawable/meditar" />
@@ -92,33 +92,6 @@
                     android:gravity="center_vertical"
                     android:onClick="ejermed"
                     android:text="@string/menu_ejer_parte2"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textColor="@color/design_default_color_on_secondary"
-                    android:textStyle="bold"
-                    app:fontFamily="casual" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="151dp"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imageView28"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/respirar" />
-
-                <TextView
-                    android:id="@+id/textView89"
-                    android:layout_width="127dp"
-                    android:layout_height="130dp"
-                    android:layout_weight="1"
-                    android:gravity="center_vertical"
-                    android:text="@string/menu_ejer_parte3"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     android:textColor="@color/design_default_color_on_secondary"
                     android:textStyle="bold"

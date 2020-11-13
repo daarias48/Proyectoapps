@@ -69,7 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Contraseña"
+            android:hint="@string/Econtra"
             android:inputType="textPassword"
             android:textSize="18sp"
             android:typeface="monospace" />

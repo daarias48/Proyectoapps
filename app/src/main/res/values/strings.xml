@@ -145,6 +145,7 @@
     <string name="info_vs_parte1">Como hemos visto, la causa del estrés es la presencia real de un factor estresante. En cambio, en la ansiedad, esa respuesta del organismo continúa presente cuando ya ha desaparecido tal estímulo estresante, es una respuesta emocional de aprehensión, inquietud, desasosiego que se produce, como ya se ha dicho, en ausencia de un estímulo claro.</string>
 
     <!--INTERFAZ JUEGO RESPIRAR-->
+    <string name="juego_respirar_titulo">Concéntrate en tu respiración</string>
     <string name="btempezar">EMPEZAR</string>
 
     <!--INTERFAZ MENÚ EJERCICIOS-->
@@ -182,5 +183,22 @@
     <!--INTERFAZ SON PIANO-->
     <string name="titulo_son_piano">IDENTIFICA EL SONIDO</string>
 
+    <!--CONTEO 5 A 5-->
+    <string name="conteo5a5_titulo">RELÁJATE Y CUENTA</string>
+
+    <!--FRASES LIBROS-->
+    <string name="frases_titulo">SIMPLEMENTE LEE...</string>
+
+    <!--PANTALLA DE DIARIOS-->
+    <string name="mostrar_diaros_titulo">MIS DIARIOS</string>
+
+    <!--PANTALLA DE TEXTURAS-->
+    <string name="texturas_titulo">DESCRIBE LA TEXTURA</string>
+    <string name="texturas_caja">Describe la textura</string>
+
+    <!--CUADRO DE DIALOGO-->
+    <string name="dialogo_pregunta">¿Te sientes mejor?</string>
+    <string name="dialogo_respuesta1">Mucho mejor</string>
+    <string name="dialogo_respuesta2">Aún no</string>
 
 </resources>

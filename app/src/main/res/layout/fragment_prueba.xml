@@ -23,11 +23,11 @@
             android:layout_marginRight="112dp"
             android:fontFamily="casual"
             android:gravity="start"
-            android:text="Mis Diarios"
+            android:text="@string/mostrar_diaros_titulo"
             android:textAlignment="textStart"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textStyle="bold"
 
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

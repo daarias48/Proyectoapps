@@ -15,9 +15,8 @@
         android:layout_marginLeft="28dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/ovalo"
-        android:text="@string/bt_guardar"
         android:onClick="RegisDiario"
-        android:text="GUARDAR"
+        android:text="@string/bt_guardar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 

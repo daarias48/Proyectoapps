@@ -19,7 +19,7 @@
         android:layout_marginRight="112dp"
         android:fontFamily="casual"
         android:gravity="start"
-        android:text="Concéntrate en tu respiración"
+        android:text="@string/juego_respirar_titulo"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold"
