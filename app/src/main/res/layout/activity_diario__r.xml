@@ -50,12 +50,15 @@
 
     <LinearLayout
         android:id="@+id/linearLayout4"
-        android:layout_width="366dp"
+        android:layout_width="345dp"
         android:layout_height="401dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
         android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15">
 
@@ -131,19 +134,13 @@
                 android:onClick="onClick" />
 
             <TextView
-                android:id="@+id/textView58"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="   " />
-
-            <TextView
                 android:id="@+id/ID_emoción"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAllCaps="true"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="@color/design_default_color_secondary_variant"
-                android:textSize="18sp"
+                android:textSize="10sp"
                 android:textStyle="bold"
                 app:fontFamily="casual" />
 
