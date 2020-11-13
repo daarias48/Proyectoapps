@@ -50,8 +50,8 @@
                 android:layout_width="240dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:enabled="false"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:onClick="Calendario" />
         </TableRow>
 
         <TextView
@@ -116,7 +116,7 @@
                 android:textAllCaps="true"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="@color/design_default_color_secondary_variant"
-                android:textSize="18sp"
+                android:textSize="12sp"
                 android:textStyle="bold"
                 app:fontFamily="casual" />
 
@@ -153,6 +153,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="353dp"
         android:layout_height="79dp"
         android:layout_marginTop="16dp"
@@ -188,5 +189,14 @@
             android:onClick="Atras"
             android:text="ATRAS" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/idDiario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

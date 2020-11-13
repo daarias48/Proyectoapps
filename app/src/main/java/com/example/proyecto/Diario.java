@@ -40,6 +40,8 @@ public class Diario {
 
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String,String> parametros = new HashMap<String,String>();
+                //String id = "1";
+                //parametros.put("id",id);
                 parametros.put("fecha",fecha);
                 parametros.put("emocion",emocion);
                 parametros.put("diario",diario);
@@ -69,7 +71,7 @@ public class Diario {
     }
 
 
-    public void ModificarDiario (String URL, final String fecha, final String emocion, final String diario, final Context context){
+    public void ModificarDiario (String URL, final String fecha, final String emocion, final String diario, final String id, final Context context){
         StringRequest stringRequest = new StringRequest(Request.Method.POST,URL, new Response.Listener<String>(){
 
             @Override
@@ -87,7 +89,7 @@ public class Diario {
 
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String,String> parametros = new HashMap<String,String>();
-
+                parametros.put("id",id);
                 parametros.put("fecha",fecha);
                 parametros.put("emocion",emocion);
                 parametros.put("diario",diario);
@@ -99,7 +101,7 @@ public class Diario {
         requestQueue.add(stringRequest);
     }
 
-    public void EliminarDiario (String URL, final String fecha, final Context context){
+    public void EliminarDiario (String URL, final String id, final Context context){
         StringRequest stringRequest = new StringRequest(Request.Method.POST,URL, new Response.Listener<String>(){
 
             @Override
@@ -117,7 +119,7 @@ public class Diario {
 
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String,String> parametros = new HashMap<String,String>();
-                parametros.put("fecha",fecha);
+                parametros.put("id",id);
                 return parametros;
             }
         };

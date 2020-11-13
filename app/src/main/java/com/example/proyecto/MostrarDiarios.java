@@ -65,7 +65,7 @@ public class MostrarDiarios extends AppCompatActivity implements Response.ErrorL
 
     @Override
     public void onErrorResponse(VolleyError error) {
-        Toast.makeText(this,error.toString(),Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"No se encontraron diarios registrados",Toast.LENGTH_SHORT).show();
         System.out.println();
         Log.d("Error: ", error.toString());
         progress.hide();
@@ -83,6 +83,7 @@ public class MostrarDiarios extends AppCompatActivity implements Response.ErrorL
                 infoDiario = new InfoDiario();
                 JSONObject jsonObject = null;
                 jsonObject = jsonArray.getJSONObject(i);
+                infoDiario.setId(jsonObject.optInt("id"));
                 infoDiario.setFecha(jsonObject.optString("fecha"));
                 infoDiario.setEmocion(jsonObject.optString("emocion"));
                 infoDiario.setTexto(jsonObject.optString("diario"));
@@ -93,10 +94,12 @@ public class MostrarDiarios extends AppCompatActivity implements Response.ErrorL
         adapter.SetOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String id = String.valueOf(listaDiario.get(recyclerDiario.getChildAdapterPosition(v)).getId());
                 String diario = listaDiario.get(recyclerDiario.getChildAdapterPosition(v)).getTexto();
                 String fecha = listaDiario.get(recyclerDiario.getChildAdapterPosition(v)).getFecha();
                 String emocion = listaDiario.get(recyclerDiario.getChildAdapterPosition(v)).getEmocion();
                 Intent intent = new Intent(getApplicationContext(), Modif_Elim_Diario.class);
+                intent.putExtra("id",id);
                 intent.putExtra("hola",diario);
                 intent.putExtra("fecha",fecha);
                 intent.putExtra("emocion",emocion);

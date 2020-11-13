@@ -15,7 +15,7 @@ public class Ejer_identificando extends AppCompatActivity {
     }
 
     public void  Diario (View view){
-        Intent diar= new Intent(this,Diario_R.class);
+        Intent diar= new Intent(this,MostrarDiarios.class);
         startActivity(diar);
     }
 

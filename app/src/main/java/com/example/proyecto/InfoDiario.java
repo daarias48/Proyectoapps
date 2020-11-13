@@ -2,6 +2,7 @@ package com.example.proyecto;
 
 public class InfoDiario {
 
+    public int id;
     public String emocion;
     public String texto;
     public String fecha;
@@ -9,10 +10,11 @@ public class InfoDiario {
     public InfoDiario() {
     }
 
-    public InfoDiario(String emocion, String texto, String fecha) {
+    public InfoDiario(int id, String emocion, String texto, String fecha) {
         this.emocion = emocion;
         this.texto = texto;
         this.fecha = fecha;
+        this.id = id;
     }
 
     public String getEmocion() {
@@ -37,5 +39,13 @@ public class InfoDiario {
 
     public void setFecha(String fecha) {
         this.fecha = fecha;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

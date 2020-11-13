@@ -39,4 +39,11 @@ public class Pantalla_inicio extends AppCompatActivity {
         // Intent btn= new Intent(this,JuegoRespirar.class);
         //startActivity(btn);
     }
+
+    public void CerrarSesion (View view){
+        Intent inten = new Intent(Intent.ACTION_MAIN);
+        inten.addCategory(Intent.CATEGORY_HOME);
+        inten.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(inten);
+    }
 }

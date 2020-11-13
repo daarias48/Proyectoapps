@@ -95,7 +95,7 @@ public class Diario_R extends AppCompatActivity {
     }
 
     public void Atras (View view){
-        Intent sig = new Intent(this, Pantalla_inicio.class);
+        Intent sig = new Intent(this, MostrarDiarios.class);
         startActivity(sig);
     }
 }
