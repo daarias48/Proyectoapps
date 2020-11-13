@@ -19,9 +19,9 @@ import java.util.Random;
 
 public class FuncionesRandom {
 
-    int cont =35;
-    int duracion = 1500;
-    int tiempo_despues = 2000;
+    int cont =55;
+    int duracion = 500;
+    int tiempo_despues = 500;
     static int ventana =0;
     final int repeticion = 5;
 
